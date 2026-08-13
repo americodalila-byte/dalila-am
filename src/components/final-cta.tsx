@@ -45,7 +45,7 @@ export function FinalCta() {
 
   return (
     <section
-      id="atendimento"
+      id="agendar"
       ref={ref}
       className="relative overflow-hidden px-5 py-28 sm:px-8 lg:py-36"
       style={{ backgroundColor: "oklch(0.245 0.004 150)" }}
