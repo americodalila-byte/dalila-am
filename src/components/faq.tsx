@@ -56,12 +56,12 @@ function FaqItem({
           <span className="font-serif text-[1.2rem] font-light leading-[1.35] text-graphite sm:text-[1.3rem]">
             {q}
           </span>
-          <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-gold/70 text-gold">
+          <span className="relative mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-gold/70 text-gold">
+            <span className="block h-px w-3 bg-current" aria-hidden="true" />
             <span
-              className={`block h-px w-3 bg-current transition-transform duration-300 ${open ? "rotate-180" : "rotate-90"}`}
+              className={`absolute block h-px w-3 bg-current transition-transform duration-300 ${open ? "rotate-0" : "rotate-90"}`}
               aria-hidden="true"
             />
-            <span className="absolute block h-px w-3 bg-current" aria-hidden="true" />
           </span>
         </button>
       </h3>
@@ -69,10 +69,11 @@ function FaqItem({
         id={`${id}-panel`}
         role="region"
         aria-labelledby={`${id}-button`}
-        hidden={!open}
-        className="grid transition-all duration-500"
+        className={`grid transition-all duration-500 ease-out ${open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
       >
-        <p className="max-w-[34rem] pb-7 text-[0.9375rem] leading-[1.85] text-taupe">{a}</p>
+        <div className="overflow-hidden">
+          <p className="max-w-[34rem] pb-7 text-[0.9375rem] leading-[1.85] text-taupe">{a}</p>
+        </div>
       </div>
     </div>
   );
