@@ -43,6 +43,10 @@ function Index() {
       <HowItWorks />
       <Modalities />
       <Commitment />
+      <Reflections />
+      <Faq />
+      <FinalCta />
+      <SiteFooter />
     </main>
   );
 }
