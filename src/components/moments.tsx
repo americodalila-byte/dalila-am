@@ -32,7 +32,7 @@ export function Moments() {
   return (
     <section id="momentos" ref={ref} className="bg-offwhite px-5 py-24 sm:px-8 lg:py-32">
       <div className="mx-auto max-w-[1440px]">
-        <div className="mx-auto max-w-3xl text-center" style={revealStyle(shown)}>
+        <div className="mx-auto max-w-4xl text-center" style={revealStyle(shown)}>
           <BotanicalMark />
           <h2 className="mt-6 font-serif text-[2rem] font-light uppercase leading-[1.18] tracking-[0.015em] text-graphite sm:text-[2.5rem] lg:text-[2.75rem]">
             Em que momentos a

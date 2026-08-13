@@ -76,7 +76,7 @@ export function Areas() {
 
               <p className="mt-8 text-[0.75rem] tracking-[0.14em] text-gold">{n}</p>
 
-              <h3 className="mt-3 font-serif text-[1.55rem] font-light leading-[1.15] text-graphite">
+              <h3 className="mt-3 font-serif text-[1.45rem] font-light leading-[1.15] text-graphite">
                 {title}
               </h3>
 
@@ -86,7 +86,7 @@ export function Areas() {
 
               <a
                 href="#atendimento"
-                className="mt-8 inline-flex items-center gap-2 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-gold transition-colors duration-300 hover:text-wood"
+                className="mt-auto pt-8 inline-flex items-center gap-2 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-gold transition-colors duration-300 hover:text-wood"
               >
                 Saiba mais
                 <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
