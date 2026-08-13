@@ -33,10 +33,10 @@ export function Reflections() {
       className="px-5 py-24 sm:px-8 lg:py-28"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 45%, var(--color-offwhite))" }}
     >
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-14 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,2.15fr)] lg:gap-16">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] lg:gap-16">
         <div style={revealStyle(shown)}>
           <p className="text-[0.75rem] tracking-[0.14em] text-gold">07</p>
-          <h2 className="mt-4 font-serif text-[2.1rem] font-light uppercase leading-[1.12] tracking-[0.05em] text-graphite sm:text-[2.4rem] lg:text-[2.3rem] xl:text-[2.6rem]">
+          <h2 className="mt-4 font-serif text-[2.1rem] font-light uppercase leading-[1.12] tracking-[0.05em] text-graphite sm:text-[2.4rem] lg:text-[2.1rem] xl:text-[2.4rem]">
             Reflexões sobre
             <br className="hidden lg:block" /> relacionamentos
           </h2>
