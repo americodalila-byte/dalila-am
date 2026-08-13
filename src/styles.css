@@ -4,6 +4,44 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --color-offwhite: oklch(0.973 0.007 85);
+  --color-ivory: oklch(0.927 0.016 82);
+  --color-fendi: oklch(0.775 0.028 76);
+  --color-sage: oklch(0.735 0.024 140);
+  --color-taupe: oklch(0.512 0.021 70);
+  --color-graphite: oklch(0.313 0.004 250);
+  --color-wood: oklch(0.836 0.036 78);
+  --color-gold: oklch(0.686 0.055 79);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@utility rise {
+  animation: rise 1s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+
 /*
  * Design system definition.
  *
