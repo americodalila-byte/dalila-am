@@ -74,7 +74,7 @@ export function FinalCta() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex h-13 items-center justify-center gap-3 rounded-[16px] bg-gold px-8 py-4 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:bg-wood"
+            className="group inline-flex items-center justify-center gap-3 rounded-[16px] bg-gold px-8 py-4 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:bg-wood"
           >
             Agendar consulta
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
