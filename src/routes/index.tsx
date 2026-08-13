@@ -6,6 +6,9 @@ import { Moments } from "@/components/moments";
 import { Areas } from "@/components/areas";
 import { About } from "@/components/about";
 import { SystemicTherapy } from "@/components/systemic-therapy";
+import { HowItWorks } from "@/components/how-it-works";
+import { Modalities } from "@/components/modalities";
+import { Commitment } from "@/components/commitment";
 
 const title = "Dalila Américo | Psicóloga CRP 04/48200";
 const description =
