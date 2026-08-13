@@ -27,6 +27,8 @@ function Index() {
       <SiteHeader />
       <Hero />
       <Manifesto />
+      <Moments />
+      <Areas />
     </main>
   );
 }
