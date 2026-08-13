@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { Hero } from "@/components/hero";
 import { Manifesto } from "@/components/manifesto";
+import { Moments } from "@/components/moments";
+import { Areas } from "@/components/areas";
 
 const title = "Dalila Américo | Psicóloga CRP 04/48200";
 const description =
