@@ -36,6 +36,9 @@ function Index() {
       <Areas />
       <About />
       <SystemicTherapy />
+      <HowItWorks />
+      <Modalities />
+      <Commitment />
     </main>
   );
 }
