@@ -26,7 +26,7 @@ export function Hero() {
       />
 
       <div className="relative mx-auto grid max-w-[1440px] grid-cols-1 items-end gap-12 px-5 pb-16 pt-28 sm:px-8 lg:grid-cols-[55fr_45fr] lg:gap-10 lg:pb-0 lg:pt-40">
-        <div className="max-w-[36rem] pb-4 lg:pb-28">
+        <div className="max-w-[40rem] pb-4 lg:pb-28">
           <p
             className="rise text-[0.7rem] font-medium uppercase tracking-[0.32em] text-gold"
             style={{ animationDelay: "60ms" }}
@@ -35,7 +35,7 @@ export function Hero() {
           </p>
 
           <h1
-            className="rise mt-6 font-serif text-[2.6rem] font-light leading-[1.02] tracking-[-0.01em] text-graphite sm:text-[3.4rem] lg:text-[4.35rem]"
+            className="rise mt-6 font-serif text-[2.6rem] font-light leading-[1.02] tracking-[-0.01em] text-graphite sm:text-[3.4rem] lg:text-[4.6rem]"
             style={{ animationDelay: "160ms" }}
           >
             Relações mais saudáveis transformam vidas e histórias.
@@ -95,8 +95,12 @@ export function Hero() {
             alt="Dalila Américo, psicóloga"
             width={768}
             height={1344}
-            className="relative h-[26rem] w-auto object-contain object-bottom sm:h-[32rem] lg:h-[41rem]"
-            style={{ maskImage: "linear-gradient(180deg, #000 88%, transparent 100%)" }}
+            className="relative h-[26rem] w-auto object-contain object-bottom mix-blend-multiply saturate-[0.95] sm:h-[32rem] lg:h-[43rem]"
+            style={{
+              maskImage:
+                "linear-gradient(180deg, #000 86%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 12%)",
+              maskComposite: "intersect",
+            }}
           />
         </div>
       </div>

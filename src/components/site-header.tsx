@@ -35,7 +35,7 @@ export function SiteHeader() {
             alt="Dalila Américo"
             width={200}
             height={68}
-            className="h-9 w-auto mix-blend-multiply lg:h-11"
+            className="h-11 w-auto mix-blend-multiply lg:h-14"
           />
         </a>
 
