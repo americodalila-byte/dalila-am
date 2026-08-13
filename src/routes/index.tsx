@@ -9,6 +9,10 @@ import { SystemicTherapy } from "@/components/systemic-therapy";
 import { HowItWorks } from "@/components/how-it-works";
 import { Modalities } from "@/components/modalities";
 import { Commitment } from "@/components/commitment";
+import { Reflections } from "@/components/reflections";
+import { Faq } from "@/components/faq";
+import { FinalCta } from "@/components/final-cta";
+import { SiteFooter } from "@/components/site-footer";
 
 const title = "Dalila Américo | Psicóloga CRP 04/48200";
 const description =
@@ -39,6 +43,10 @@ function Index() {
       <HowItWorks />
       <Modalities />
       <Commitment />
+      <Reflections />
+      <Faq />
+      <FinalCta />
+      <SiteFooter />
     </main>
   );
 }
