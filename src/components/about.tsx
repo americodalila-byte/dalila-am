@@ -91,30 +91,6 @@ export function About() {
                 possa compreender melhor suas relações, emoções, escolhas e experiências.
               </p>
 
-              <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-0">
-                {pillars.map(({ Icon, title, text }, i) => (
-                  <div
-                    key={title}
-                    className="sm:border-l sm:border-fendi/30 sm:px-6 sm:first:border-l-0 sm:first:pl-0"
-                    style={revealStyle(shown, 380 + i * 110)}
-                  >
-                    <Icon className="h-6 w-6 text-sage" strokeWidth={1} />
-                    <h3 className="mt-4 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-gold">
-                      {title}
-                    </h3>
-                    <p className="mt-3 text-[0.875rem] leading-[1.7] text-taupe">{text}</p>
-                  </div>
-                ))}
-              </div>
-
-              <a
-                href="#atendimento"
-                className="group mt-12 inline-flex h-[54px] items-center justify-center gap-3 rounded-[18px] bg-graphite px-8 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
-                style={revealStyle(shown, 720)}
-              >
-                Conhecer mais sobre mim
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
             </div>
 
             <div className="hidden w-px bg-fendi/30 lg:block" aria-hidden="true" />
@@ -134,6 +110,31 @@ export function About() {
               </ul>
             </aside>
           </div>
+
+          <div className="mt-14 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-0">
+            {pillars.map(({ Icon, title, text }, i) => (
+              <div
+                key={title}
+                className="sm:border-l sm:border-fendi/30 sm:px-7 sm:first:border-l-0 sm:first:pl-0"
+                style={revealStyle(shown, 380 + i * 110)}
+              >
+                <Icon className="h-6 w-6 text-sage" strokeWidth={1} />
+                <h3 className="mt-4 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-gold">
+                  {title}
+                </h3>
+                <p className="mt-3 text-[0.875rem] leading-[1.7] text-taupe">{text}</p>
+              </div>
+            ))}
+          </div>
+
+          <a
+            href="#atendimento"
+            className="group mt-14 inline-flex h-[54px] items-center justify-center gap-3 rounded-[18px] bg-graphite px-8 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+            style={revealStyle(shown, 720)}
+          >
+            Conhecer mais sobre mim
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </a>
         </div>
       </div>
     </section>
