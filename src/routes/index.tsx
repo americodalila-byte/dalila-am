@@ -31,6 +31,8 @@ function Index() {
       <Manifesto />
       <Moments />
       <Areas />
+      <About />
+      <SystemicTherapy />
     </main>
   );
 }
