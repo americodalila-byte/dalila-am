@@ -26,7 +26,7 @@ export function Hero() {
       />
 
       <div className="relative mx-auto grid max-w-[1440px] grid-cols-1 items-end gap-12 px-5 pb-16 pt-28 sm:px-8 lg:grid-cols-[55fr_45fr] lg:gap-10 lg:pb-0 lg:pt-40">
-        <div className="max-w-[40rem] pb-4 lg:pb-28">
+        <div className="max-w-[44rem] pb-4 lg:pb-28">
           <p
             className="rise text-[0.7rem] font-medium uppercase tracking-[0.32em] text-gold"
             style={{ animationDelay: "60ms" }}
