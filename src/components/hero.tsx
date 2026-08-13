@@ -95,10 +95,10 @@ export function Hero() {
             alt="Dalila Américo, psicóloga"
             width={768}
             height={1344}
-            className="relative h-[26rem] w-auto object-contain object-bottom mix-blend-multiply saturate-[0.95] sm:h-[32rem] lg:h-[43rem]"
+            className="relative h-[26rem] w-auto object-contain object-bottom sm:h-[32rem] lg:h-[43rem]"
             style={{
               maskImage:
-                "linear-gradient(180deg, #000 86%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 12%)",
+                "linear-gradient(180deg, #000 88%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 14%)",
               maskComposite: "intersect",
             }}
           />
