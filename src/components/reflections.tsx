@@ -92,7 +92,7 @@ export function Reflections() {
                 </h3>
                 <a
                   href={INSTAGRAM_URL ?? "#reflexoes"}
-                  className="mt-auto inline-flex items-center gap-2 pt-8 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-taupe transition-colors duration-300 hover:text-gold"
+                  className="mt-auto inline-flex items-center gap-2 pt-6 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-taupe transition-colors duration-300 hover:text-gold"
                 >
                   Ler reflexão
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
