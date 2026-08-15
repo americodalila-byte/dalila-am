@@ -95,7 +95,7 @@ export function Hero() {
             className="relative h-[22rem] w-full max-w-[26rem] object-contain object-bottom sm:h-[26rem] lg:h-full lg:max-h-[calc(100svh-250px)] lg:min-h-[26rem] lg:w-full lg:max-w-none lg:object-cover lg:object-[center_top]"
             style={{
               maskImage:
-                "linear-gradient(180deg, #000 90%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 12%)",
+                "linear-gradient(180deg, transparent 0%, #000 6%, #000 92%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 12%)",
               maskComposite: "intersect",
             }}
           />
