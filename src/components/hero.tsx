@@ -28,17 +28,17 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex w-full max-w-[1440px] flex-1 grid-cols-1 flex-col items-stretch gap-8 px-5 pb-8 pt-24 sm:px-8 lg:grid lg:grid-cols-[58fr_42fr] lg:gap-10 lg:pb-0 lg:pt-[104px]">
+      <div className="relative mx-auto flex w-full max-w-[1440px] flex-1 grid-cols-1 flex-col items-stretch gap-8 px-5 pb-8 pt-24 sm:px-8 lg:grid lg:grid-cols-[56fr_44fr] lg:gap-10 lg:pb-0 lg:pt-[104px]">
         <div className="flex max-w-[46rem] flex-col justify-center lg:pb-6">
           <p className="rise text-[0.7rem] font-medium uppercase tracking-[0.32em] text-gold" style={{ animationDelay: "60ms" }}>
             Psicóloga • CRP 04/48200
           </p>
 
           <h1
-            className="rise mt-[28px] max-w-[45.5rem] font-serif font-light tracking-[-0.01em] text-graphite"
+            className="rise mt-[28px] max-w-[44.5rem] font-serif font-light tracking-[-0.01em] text-graphite"
             style={{
               animationDelay: "160ms",
-              fontSize: "clamp(2.35rem, 4.65vw, 4.35rem)",
+              fontSize: "clamp(2.3rem, 4.5vw, 4.2rem)",
               lineHeight: 1.01,
             }}
           >
