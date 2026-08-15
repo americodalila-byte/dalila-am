@@ -28,7 +28,7 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex w-full max-w-[1440px] flex-1 grid-cols-1 flex-col items-stretch gap-8 px-5 pb-8 pt-24 sm:px-8 lg:grid lg:grid-cols-[60fr_40fr] lg:gap-8 lg:pb-0 lg:pt-[104px]">
+      <div className="relative mx-auto flex w-full max-w-[1440px] flex-1 grid-cols-1 flex-col items-stretch gap-8 px-5 pb-8 pt-24 sm:px-8 lg:grid lg:grid-cols-[58fr_42fr] lg:gap-10 lg:pb-0 lg:pt-[104px]">
         <div className="flex max-w-[46rem] flex-col justify-center lg:pb-6">
           <p className="rise text-[0.7rem] font-medium uppercase tracking-[0.32em] text-gold" style={{ animationDelay: "60ms" }}>
             Psicóloga • CRP 04/48200
