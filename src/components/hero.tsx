@@ -78,16 +78,16 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="rise relative flex w-full justify-center lg:mt-4 lg:justify-end" style={{ animationDelay: "220ms" }}>
+        <div className="rise relative flex w-full justify-center lg:-mt-1 lg:justify-end" style={{ animationDelay: "220ms" }}>
           <div
-            className="relative aspect-[4/5] w-full max-w-none overflow-hidden rounded-[18px] border border-fendi/[0.06] bg-ivory shadow-[0_18px_50px_rgba(47,49,50,0.06)] sm:max-w-[26rem] lg:mb-10 lg:w-[90%] lg:max-w-[31rem] lg:rounded-[22px]"
+            className="relative aspect-[4/5] w-full max-w-none overflow-hidden rounded-[18px] border border-fendi/[0.06] bg-ivory shadow-[0_18px_50px_rgba(47,49,50,0.06)] sm:max-w-[23rem] lg:mb-16 lg:w-[86%] lg:max-w-[28rem] lg:rounded-[22px]"
           >
             <img
               src={dalila.url}
               alt="Dalila Américo, psicóloga"
               width={768}
               height={1376}
-              className="absolute inset-0 h-full w-full object-cover object-[center_20%]"
+              className="absolute inset-0 h-full w-full object-cover object-[center_18%]"
             />
           </div>
         </div>
