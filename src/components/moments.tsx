@@ -30,7 +30,7 @@ export function Moments() {
   const { ref, shown } = useReveal<HTMLElement>();
 
   return (
-    <section id="momentos" ref={ref} className="bg-offwhite px-5 py-24 sm:px-8 lg:py-32">
+    <section id="momentos" ref={ref} className="bg-offwhite px-5 pt-12 pb-20 sm:px-8 lg:pt-14 lg:pb-28">
       <div className="mx-auto max-w-[1440px]">
         <div className="mx-auto max-w-5xl text-center" style={revealStyle(shown)}>
           <BotanicalMark />
@@ -45,7 +45,7 @@ export function Moments() {
           </p>
         </div>
 
-        <ul className="mt-16 grid grid-cols-2 gap-y-12 sm:grid-cols-4 lg:mt-20 lg:grid-cols-7 lg:gap-y-0">
+        <ul className="mt-14 grid grid-cols-2 gap-y-12 sm:grid-cols-4 lg:mt-16 lg:grid-cols-7 lg:gap-y-0">
           {items.map(({ Icon, label }, i) => (
             <li
               key={label}

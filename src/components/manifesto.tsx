@@ -1,6 +1,6 @@
 export function Manifesto() {
   return (
-    <section className="flex items-center justify-center bg-ivory/70 px-5 py-12 sm:px-8 lg:h-[200px] lg:py-0">
+    <section className="flex items-center justify-center bg-ivory/70 px-5 py-10 sm:px-8 lg:py-14">
       <div className="mx-auto max-w-3xl text-center">
         <svg
           className="mx-auto h-5 w-5 text-gold"
