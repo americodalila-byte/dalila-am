@@ -15,7 +15,10 @@ function WhatsappIcon({ className }: { className?: string }) {
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden bg-offwhite">
+    <section
+      id="top"
+      className="relative flex flex-col overflow-hidden bg-offwhite lg:min-h-[calc(100svh-210px)]"
+    >
       <div
         className="pointer-events-none absolute inset-0"
         style={{
@@ -25,30 +28,27 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto grid max-w-[1440px] grid-cols-1 items-end gap-12 px-5 pb-16 pt-28 sm:px-8 lg:grid-cols-[55fr_45fr] lg:gap-10 lg:pb-0 lg:pt-40">
-        <div className="max-w-[44rem] pb-4 lg:pb-28">
-          <p
-            className="rise text-[0.7rem] font-medium uppercase tracking-[0.32em] text-gold"
-            style={{ animationDelay: "60ms" }}
-          >
+      <div className="relative mx-auto flex w-full max-w-[1440px] flex-1 grid-cols-1 flex-col items-stretch gap-8 px-5 pb-8 pt-24 sm:px-8 lg:grid lg:grid-cols-[60fr_40fr] lg:gap-8 lg:pb-0 lg:pt-[104px]">
+        <div className="flex max-w-[46rem] flex-col justify-center lg:pb-6">
+          <p className="rise text-[0.7rem] font-medium uppercase tracking-[0.32em] text-gold" style={{ animationDelay: "60ms" }}>
             Psicóloga • CRP 04/48200
           </p>
 
           <h1
-            className="rise mt-6 font-serif text-[2.6rem] font-light leading-[1.02] tracking-[-0.01em] text-graphite sm:text-[3.4rem] lg:text-[4.6rem]"
-            style={{ animationDelay: "160ms" }}
+            className="rise mt-[28px] max-w-[47rem] font-serif font-light tracking-[-0.01em] text-graphite"
+            style={{
+              animationDelay: "160ms",
+              fontSize: "clamp(2.4rem, 5vw, 4.5rem)",
+              lineHeight: 1.01,
+            }}
           >
             Relações mais saudáveis transformam vidas e histórias.
           </h1>
 
-          <div
-            className="rise mt-8 h-px w-16 bg-gold"
-            style={{ animationDelay: "260ms" }}
-            aria-hidden="true"
-          />
+          <div className="rise mt-[20px] h-px w-16 bg-gold" style={{ animationDelay: "260ms" }} aria-hidden="true" />
 
           <p
-            className="rise mt-7 max-w-[30rem] text-[1.0625rem] leading-[1.75] text-taupe"
+            className="rise mt-[22px] max-w-[30rem] text-[1.0625rem] leading-[1.7] text-taupe"
             style={{ animationDelay: "320ms" }}
           >
             A psicoterapia é um espaço de acolhimento, escuta e compreensão para que você possa
@@ -57,19 +57,19 @@ export function Hero() {
           </p>
 
           <div
-            className="rise mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4"
+            className="rise mt-[32px] flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4"
             style={{ animationDelay: "420ms" }}
           >
             <a
-              href="#atendimento"
-              className="group inline-flex h-[54px] items-center justify-center gap-3 rounded-[18px] bg-graphite px-8 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90"
+              href="#agendar"
+              className="group inline-flex h-[55px] items-center justify-center gap-3 rounded-[18px] bg-graphite px-8 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 sm:w-[235px]"
             >
               Agendar consulta
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <a
               href="https://wa.me/5541000000000"
-              className="inline-flex h-[54px] items-center justify-center gap-3 rounded-[18px] border border-gold/60 px-8 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-ivory/60"
+              className="inline-flex h-[55px] items-center justify-center gap-3 rounded-[18px] border border-gold/60 px-8 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-ivory/60 sm:w-[300px]"
             >
               <WhatsappIcon className="h-5 w-5 text-gold" />
               Conversar pelo WhatsApp
@@ -77,10 +77,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div
-          className="rise relative flex justify-center lg:justify-end"
-          style={{ animationDelay: "220ms" }}
-        >
+        <div className="rise relative flex items-end justify-center lg:justify-end" style={{ animationDelay: "220ms" }}>
           <div
             className="pointer-events-none absolute bottom-0 h-[70%] w-[92%] rounded-t-[999px]"
             style={{
@@ -95,10 +92,10 @@ export function Hero() {
             alt="Dalila Américo, psicóloga"
             width={768}
             height={1344}
-            className="relative h-[26rem] w-auto object-contain object-bottom sm:h-[32rem] lg:h-[43rem]"
+            className="relative h-[22rem] w-full max-w-[26rem] object-contain object-bottom sm:h-[26rem] lg:h-full lg:max-h-[calc(100svh-250px)] lg:min-h-[26rem] lg:w-full lg:max-w-none lg:object-cover lg:object-[center_top]"
             style={{
               maskImage:
-                "linear-gradient(180deg, #000 88%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 14%)",
+                "linear-gradient(180deg, transparent 0%, #000 6%, #000 92%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 12%)",
               maskComposite: "intersect",
             }}
           />
@@ -106,7 +103,7 @@ export function Hero() {
       </div>
 
       <svg
-        className="relative -mt-6 h-16 w-full text-gold lg:-mt-10"
+        className="relative -mt-2 h-10 w-full shrink-0 text-gold"
         viewBox="0 0 1440 60"
         fill="none"
         preserveAspectRatio="none"
