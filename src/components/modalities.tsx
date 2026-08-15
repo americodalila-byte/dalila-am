@@ -30,7 +30,7 @@ export function Modalities() {
     <section
       id="modalidades"
       ref={ref}
-      className="px-5 py-24 sm:px-8 lg:py-28"
+      className="px-5 py-16 sm:px-8 lg:py-20"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 55%, var(--color-offwhite))" }}
     >
       <div className="mx-auto max-w-[1440px]">
@@ -42,7 +42,7 @@ export function Modalities() {
           <div className="mt-6 h-px w-14 bg-gold" aria-hidden="true" />
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {cards.map(({ Icon, title, text, highlight, link }, i) => (
             <article
               key={title}

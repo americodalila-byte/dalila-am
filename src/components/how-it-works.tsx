@@ -44,7 +44,7 @@ export function HowItWorks() {
   const { ref, shown } = useReveal<HTMLElement>();
 
   return (
-    <section id="atendimento" ref={ref} className="bg-offwhite px-5 py-24 sm:px-8 lg:py-28">
+    <section id="atendimento" ref={ref} className="bg-offwhite px-5 py-16 sm:px-8 lg:py-20">
       <div className="mx-auto max-w-[1440px]">
         <div style={revealStyle(shown)}>
           <p className="text-[0.75rem] tracking-[0.14em] text-gold">04</p>
@@ -54,7 +54,7 @@ export function HowItWorks() {
           <div className="mt-6 h-px w-14 bg-gold" aria-hidden="true" />
         </div>
 
-        <ol className="mt-16 grid grid-cols-1 gap-14 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-8">
+        <ol className="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4 lg:gap-8">
           {steps.map(({ n, Icon, title, text }, i) => (
             <li
               key={n}

@@ -83,7 +83,7 @@ export function Faq() {
   const { ref, shown } = useReveal<HTMLElement>();
 
   return (
-    <section id="faq" ref={ref} className="bg-offwhite px-5 py-24 sm:px-8 lg:py-28">
+    <section id="faq" ref={ref} className="bg-offwhite px-5 py-16 sm:px-8 lg:py-20">
       <div className="mx-auto max-w-[1440px]">
         <div style={revealStyle(shown)}>
           <p className="text-[0.75rem] tracking-[0.14em] text-gold">08</p>
@@ -93,7 +93,7 @@ export function Faq() {
           <div className="mt-6 h-px w-14 bg-gold" aria-hidden="true" />
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-x-16 lg:mt-16 lg:grid-cols-2">
+        <div className="mt-10 grid grid-cols-1 gap-x-16 lg:mt-12 lg:grid-cols-2">
           {faqs.map((item, i) => (
             <FaqItem key={item.q} {...item} shown={shown} delay={160 + i * 70} />
           ))}

@@ -45,7 +45,7 @@ export function Moments() {
           </p>
         </div>
 
-        <ul className="mt-14 grid grid-cols-2 gap-y-12 sm:grid-cols-4 lg:mt-16 lg:grid-cols-7 lg:gap-y-0">
+        <ul className="mt-12 grid grid-cols-2 gap-y-10 sm:grid-cols-4 lg:mt-14 lg:grid-cols-7 lg:gap-y-0">
           {items.map(({ Icon, label }, i) => (
             <li
               key={label}

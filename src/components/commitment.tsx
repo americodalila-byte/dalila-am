@@ -14,7 +14,7 @@ export function Commitment() {
   const { ref, shown } = useReveal<HTMLElement>();
 
   return (
-    <section id="compromisso" ref={ref} className="bg-offwhite px-5 py-24 sm:px-8 lg:py-28">
+    <section id="compromisso" ref={ref} className="bg-offwhite px-5 py-16 sm:px-8 lg:py-20">
       <div className="mx-auto max-w-[1440px]">
         <div style={revealStyle(shown)}>
           <p className="text-[0.75rem] tracking-[0.14em] text-gold">06</p>
@@ -24,7 +24,7 @@ export function Commitment() {
           <div className="mt-6 h-px w-14 bg-gold" aria-hidden="true" />
         </div>
 
-        <ul className="mt-14 grid grid-cols-2 gap-y-12 sm:grid-cols-3 lg:mt-16 lg:grid-cols-6 lg:gap-y-0">
+        <ul className="mt-12 grid grid-cols-2 gap-y-10 sm:grid-cols-3 lg:mt-14 lg:grid-cols-6 lg:gap-y-0">
           {pillars.map(({ Icon, label }, i) => (
             <li
               key={label}
