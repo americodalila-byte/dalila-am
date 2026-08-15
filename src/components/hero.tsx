@@ -35,7 +35,7 @@ export function Hero() {
           </p>
 
           <h1
-            className="rise mt-[28px] max-w-[44.5rem] font-serif font-light tracking-[-0.01em] text-graphite"
+            className="rise mt-[28px] max-w-[37.5rem] font-serif font-light tracking-[-0.01em] text-graphite"
             style={{
               animationDelay: "160ms",
               fontSize: "clamp(2.3rem, 4.5vw, 4.2rem)",
@@ -78,7 +78,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="rise relative -mt-4 flex items-start justify-center lg:-mt-16 lg:justify-end" style={{ animationDelay: "220ms" }}>
+        <div className="rise relative -mt-4 flex items-start justify-center lg:-mt-8 lg:justify-end" style={{ animationDelay: "220ms" }}>
           <div
             className="pointer-events-none absolute bottom-0 h-[70%] w-[92%] rounded-t-[999px]"
             style={{
