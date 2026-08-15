@@ -28,8 +28,8 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex w-full max-w-[1440px] flex-1 grid-cols-1 flex-col items-stretch gap-8 px-5 pb-8 pt-24 sm:px-8 lg:grid lg:grid-cols-[56fr_44fr] lg:gap-10 lg:pb-0 lg:pt-[104px]">
-        <div className="flex max-w-[46rem] flex-col justify-center lg:pb-6">
+      <div className="relative mx-auto flex w-full max-w-[1440px] flex-1 grid-cols-1 flex-col items-start gap-8 px-5 pb-8 pt-24 sm:px-8 lg:grid lg:grid-cols-[60fr_40fr] lg:gap-10 lg:pb-0 lg:pt-[104px]">
+        <div className="flex max-w-[46rem] flex-col justify-start lg:pb-6">
           <p className="rise text-[0.7rem] font-medium uppercase tracking-[0.32em] text-gold" style={{ animationDelay: "60ms" }}>
             Psicóloga • CRP 04/48200
           </p>
@@ -62,14 +62,14 @@ export function Hero() {
           >
             <a
               href="#agendar"
-              className="group inline-flex h-[54px] items-center justify-center gap-3 whitespace-nowrap rounded-[18px] bg-graphite px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90"
+              className="group inline-flex h-[54px] w-full items-center justify-center gap-3 whitespace-nowrap rounded-[18px] bg-graphite px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 sm:w-[245px]"
             >
               Agendar consulta
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <a
               href="https://wa.me/5541000000000"
-              className="inline-flex h-[54px] items-center justify-center gap-3 whitespace-nowrap rounded-[18px] border border-gold/60 px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-ivory/60"
+              className="inline-flex h-[54px] w-full items-center justify-center gap-3 whitespace-nowrap rounded-[18px] border border-gold/60 px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-ivory/60 sm:w-[310px]"
             >
               <WhatsappIcon className="h-5 w-5 text-gold" />
               Conversar pelo WhatsApp
@@ -78,28 +78,18 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="rise relative -mt-4 flex items-start justify-center lg:-mt-8 lg:justify-end" style={{ animationDelay: "220ms" }}>
+        <div className="rise relative flex w-full justify-center lg:mt-4 lg:justify-end" style={{ animationDelay: "220ms" }}>
           <div
-            className="pointer-events-none absolute bottom-0 h-[70%] w-[92%] rounded-t-[999px]"
-            style={{
-              background:
-                "linear-gradient(180deg, var(--color-ivory) 0%, var(--color-wood)/0 100%)",
-              opacity: 0.5,
-            }}
-            aria-hidden="true"
-          />
-          <img
-            src={dalila.url}
-            alt="Dalila Américo, psicóloga"
-            width={768}
-            height={1344}
-            className="relative h-[22rem] w-full max-w-[26rem] object-contain object-bottom sm:h-[26rem] lg:h-full lg:max-h-[calc(100svh-180px)] lg:min-h-[30rem] lg:w-full lg:max-w-none lg:object-cover lg:object-[center_22%]"
-            style={{
-              maskImage:
-                "linear-gradient(180deg, transparent 0%, #000 4%, #000 92%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 10%)",
-              maskComposite: "intersect",
-            }}
-          />
+            className="relative aspect-[4/5] w-full max-w-none overflow-hidden rounded-[18px] border border-fendi/[0.06] bg-ivory shadow-[0_18px_50px_rgba(47,49,50,0.06)] sm:max-w-[26rem] lg:mb-10 lg:w-[90%] lg:max-w-[31rem] lg:rounded-[22px]"
+          >
+            <img
+              src={dalila.url}
+              alt="Dalila Américo, psicóloga"
+              width={768}
+              height={1376}
+              className="absolute inset-0 h-full w-full object-cover object-[center_20%]"
+            />
+          </div>
         </div>
 
       </div>
