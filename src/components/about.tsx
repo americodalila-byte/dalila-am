@@ -35,12 +35,12 @@ export function About() {
     <section id="sobre" ref={ref} className="overflow-hidden bg-offwhite">
       <div className="mx-auto grid max-w-[1440px] grid-cols-1 lg:grid-cols-[35fr_65fr]">
         {/* Cabeçalho no mobile aparece antes da foto */}
-        <div className="order-1 px-5 pt-24 sm:px-8 lg:hidden">
+        <div className="order-1 px-5 pt-16 sm:px-8 lg:hidden">
           <SectionLabel />
         </div>
 
         <div
-          className="order-2 relative min-h-[26rem] lg:order-1 lg:min-h-[46rem]"
+          className="order-2 relative min-h-[22rem] lg:order-1 lg:min-h-[38rem]"
           style={revealStyle(shown)}
         >
           <div
@@ -61,15 +61,15 @@ export function About() {
           />
         </div>
 
-        <div className="order-3 px-5 pb-24 pt-12 sm:px-8 lg:order-2 lg:py-28 lg:pl-16 lg:pr-8">
+        <div className="order-3 px-5 pb-16 pt-10 sm:px-8 lg:order-2 lg:py-20 lg:pl-16 lg:pr-8">
           <div className="hidden lg:block" style={revealStyle(shown, 120)}>
             <SectionLabel />
           </div>
 
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_auto_16rem] lg:gap-10">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_auto_16rem] lg:gap-10">
             <div>
               <h2
-                className="mt-8 font-serif text-[2.6rem] font-light leading-[1.05] text-graphite sm:text-[3.2rem] lg:text-[3.6rem]"
+                className="mt-6 font-serif text-[2.6rem] font-light leading-[1.05] text-graphite sm:text-[3.2rem] lg:text-[3.6rem]"
                 style={revealStyle(shown, 180)}
               >
                 Dalila Américo
@@ -111,7 +111,7 @@ export function About() {
             </aside>
           </div>
 
-          <div className="mt-14 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-0">
+          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-0">
             {pillars.map(({ Icon, title, text }, i) => (
               <div
                 key={title}
@@ -129,7 +129,7 @@ export function About() {
 
           <a
             href="#atendimento"
-            className="group mt-14 inline-flex h-[54px] items-center justify-center gap-3 rounded-[18px] bg-graphite px-8 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+            className="group mt-12 inline-flex h-[54px] items-center justify-center gap-3 rounded-[18px] bg-graphite px-8 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
             style={revealStyle(shown, 720)}
           >
             Conhecer mais sobre mim
