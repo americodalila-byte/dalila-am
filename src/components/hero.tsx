@@ -62,14 +62,14 @@ export function Hero() {
           >
             <a
               href="#agendar"
-              className="group inline-flex h-[55px] items-center justify-center gap-3 rounded-[18px] bg-graphite px-8 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 sm:w-[235px]"
+              className="group inline-flex h-[55px] items-center justify-center gap-3 whitespace-nowrap rounded-[18px] bg-graphite px-6 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 sm:w-[245px]"
             >
               Agendar consulta
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <a
               href="https://wa.me/5541000000000"
-              className="inline-flex h-[55px] items-center justify-center gap-3 rounded-[18px] border border-gold/60 px-8 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-ivory/60 sm:w-[300px]"
+              className="inline-flex h-[55px] items-center justify-center gap-3 whitespace-nowrap rounded-[18px] border border-gold/60 px-6 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-ivory/60 sm:w-[310px]"
             >
               <WhatsappIcon className="h-5 w-5 text-gold" />
               Conversar pelo WhatsApp
