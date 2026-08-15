@@ -30,7 +30,7 @@ export function Moments() {
   const { ref, shown } = useReveal<HTMLElement>();
 
   return (
-    <section id="momentos" ref={ref} className="bg-offwhite px-5 pt-12 pb-20 sm:px-8 lg:pt-14 lg:pb-28">
+    <section id="momentos" ref={ref} className="bg-offwhite px-5 pt-12 pb-12 sm:px-8 lg:pt-14 lg:pb-16">
       <div className="mx-auto max-w-[1440px]">
         <div className="mx-auto max-w-5xl text-center" style={revealStyle(shown)}>
           <BotanicalMark />

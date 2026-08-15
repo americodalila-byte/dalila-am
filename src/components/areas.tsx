@@ -48,7 +48,7 @@ export function Areas() {
     <section
       id="areas"
       ref={ref}
-      className="px-5 py-16 sm:px-8 lg:py-20"
+      className="px-5 pt-10 pb-16 sm:px-8 lg:pt-12 lg:pb-20"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 62%, var(--color-offwhite))" }}
     >
       <div className="mx-auto max-w-[1440px]">
