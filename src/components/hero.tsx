@@ -78,7 +78,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="rise relative -mt-4 flex items-start justify-center lg:-mt-10 lg:justify-end" style={{ animationDelay: "220ms" }}>
+        <div className="rise relative -mt-4 flex items-start justify-center lg:-mt-16 lg:justify-end" style={{ animationDelay: "220ms" }}>
           <div
             className="pointer-events-none absolute bottom-0 h-[70%] w-[92%] rounded-t-[999px]"
             style={{
@@ -93,7 +93,7 @@ export function Hero() {
             alt="Dalila Américo, psicóloga"
             width={768}
             height={1344}
-            className="relative h-[22rem] w-full max-w-[26rem] object-contain object-bottom sm:h-[26rem] lg:h-full lg:max-h-[calc(100svh-220px)] lg:min-h-[28rem] lg:w-full lg:max-w-none lg:object-cover lg:object-[center_5%]"
+            className="relative h-[22rem] w-full max-w-[26rem] object-contain object-bottom sm:h-[26rem] lg:h-full lg:max-h-[calc(100svh-180px)] lg:min-h-[30rem] lg:w-full lg:max-w-none lg:object-cover lg:object-[center_22%]"
             style={{
               maskImage:
                 "linear-gradient(180deg, transparent 0%, #000 4%, #000 92%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 10%)",
@@ -101,6 +101,7 @@ export function Hero() {
             }}
           />
         </div>
+
       </div>
 
       <svg
