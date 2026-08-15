@@ -48,7 +48,7 @@ export function Areas() {
     <section
       id="areas"
       ref={ref}
-      className="px-5 py-24 sm:px-8 lg:py-28"
+      className="px-5 py-16 sm:px-8 lg:py-20"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 62%, var(--color-offwhite))" }}
     >
       <div className="mx-auto max-w-[1440px]">
@@ -60,12 +60,12 @@ export function Areas() {
           <div className="mx-auto mt-6 h-px w-14 bg-gold" aria-hidden="true" />
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-6 lg:gap-[18px]">
+        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-6 lg:gap-[18px]">
           {cards.map(({ n, Icon, title, text }, i) => (
             <article
               key={n}
               style={revealStyle(shown, 200 + i * 90)}
-              className="group flex h-full flex-col rounded-xl border border-fendi/35 bg-offwhite p-7 shadow-[0_1px_2px_rgba(47,49,50,0.03)] transition-all duration-300 hover:-translate-y-[3px] hover:border-fendi/60 hover:shadow-[0_14px_30px_-18px_rgba(47,49,50,0.25)]"
+              className="group grid h-full grid-rows-[auto_auto_auto_auto_1fr_auto] gap-y-4 rounded-xl border border-fendi/35 bg-offwhite p-6 shadow-[0_1px_2px_rgba(47,49,50,0.03)] transition-all duration-300 hover:-translate-y-[3px] hover:border-fendi/60 hover:shadow-[0_14px_30px_-18px_rgba(47,49,50,0.25)]"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-ivory/70">
                 <Icon
@@ -74,19 +74,19 @@ export function Areas() {
                 />
               </div>
 
-              <p className="mt-8 text-[0.75rem] tracking-[0.14em] text-gold">{n}</p>
+              <p className="text-[0.75rem] tracking-[0.14em] text-gold">{n}</p>
 
-              <h3 className="mt-3 font-serif text-[1.45rem] font-light leading-[1.15] text-graphite">
+              <h3 className="min-h-[3.5rem] font-serif text-[1.45rem] font-light leading-[1.15] text-graphite">
                 {title}
               </h3>
 
-              <div className="mt-4 h-px w-9 bg-gold/70" aria-hidden="true" />
+              <div className="h-px w-9 bg-gold/70" aria-hidden="true" />
 
-              <p className="mt-4 text-[0.9375rem] leading-[1.7] text-taupe">{text}</p>
+              <p className="text-[0.9375rem] leading-[1.7] text-taupe">{text}</p>
 
               <a
                 href="#atendimento"
-                className="mt-auto pt-8 inline-flex items-center gap-2 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-gold transition-colors duration-300 hover:text-wood"
+                className="inline-flex items-center gap-2 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-gold transition-colors duration-300 hover:text-wood"
               >
                 Saiba mais
                 <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
