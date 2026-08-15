@@ -35,10 +35,10 @@ export function Hero() {
           </p>
 
           <h1
-            className="rise mt-[28px] max-w-[47rem] font-serif font-light tracking-[-0.01em] text-graphite"
+            className="rise mt-[28px] max-w-[45.5rem] font-serif font-light tracking-[-0.01em] text-graphite"
             style={{
               animationDelay: "160ms",
-              fontSize: "clamp(2.4rem, 5vw, 4.5rem)",
+              fontSize: "clamp(2.35rem, 4.65vw, 4.35rem)",
               lineHeight: 1.01,
             }}
           >
