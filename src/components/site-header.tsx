@@ -24,20 +24,21 @@ export function SiteHeader() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "border-b border-fendi/25 bg-offwhite/80 backdrop-blur-xl"
+          ? "border-b border-fendi/20 bg-offwhite/[0.94] backdrop-blur-xl"
           : "border-b border-transparent"
       }`}
     >
-      <div className="mx-auto grid max-w-[1440px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:px-8 lg:grid-cols-[1fr_auto_1fr] lg:py-6">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:px-8 lg:grid-cols-[1fr_auto_1fr] lg:py-[22px]">
         <a href="#top" className="min-w-0 focus-visible:outline-gold" aria-label="Dalila Américo — início">
           <img
             src={logo.url}
             alt="Dalila Américo"
             width={200}
             height={68}
-            className="h-11 w-auto lg:h-14"
+            className="h-11 w-auto lg:h-[52px]"
           />
         </a>
+
 
         <nav className="hidden justify-center lg:flex" aria-label="Principal">
           <ul className="flex items-center gap-10">
