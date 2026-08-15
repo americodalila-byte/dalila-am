@@ -47,7 +47,7 @@ export function FinalCta() {
     <section
       id="agendar"
       ref={ref}
-      className="relative overflow-hidden px-5 py-28 sm:px-8 lg:py-36"
+      className="relative overflow-hidden px-5 py-20 sm:px-8 lg:py-24"
       style={{ backgroundColor: "oklch(0.245 0.004 150)" }}
     >
       <BotanicalCorner className="-left-10 top-4 h-40 w-52 -scale-x-100 opacity-70 sm:h-48 sm:w-64" />

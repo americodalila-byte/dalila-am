@@ -35,7 +35,7 @@ export function SystemicTherapy() {
     <section
       id="terapia-sistemica"
       ref={ref}
-      className="px-5 py-24 sm:px-8 lg:py-32"
+      className="px-5 py-16 sm:px-8 lg:py-20"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 45%, var(--color-offwhite))" }}
     >
       <div className="mx-auto max-w-[1440px]">
@@ -89,7 +89,7 @@ export function SystemicTherapy() {
         </div>
 
         <svg
-          className="mt-20 h-14 w-full text-gold"
+          className="mt-12 h-12 w-full text-gold"
           viewBox="0 0 1440 60"
           fill="none"
           preserveAspectRatio="none"

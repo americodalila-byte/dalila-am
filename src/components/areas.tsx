@@ -60,7 +60,7 @@ export function Areas() {
           <div className="mx-auto mt-6 h-px w-14 bg-gold" aria-hidden="true" />
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-6 lg:gap-[18px]">
+        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-6 lg:gap-[18px]">
           {cards.map(({ n, Icon, title, text }, i) => (
             <article
               key={n}

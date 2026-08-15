@@ -30,7 +30,7 @@ export function Reflections() {
     <section
       id="reflexoes"
       ref={ref}
-      className="px-5 py-24 sm:px-8 lg:py-28"
+      className="px-5 py-16 sm:px-8 lg:py-20"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 45%, var(--color-offwhite))" }}
     >
       <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] lg:gap-16">
@@ -92,7 +92,7 @@ export function Reflections() {
                 </h3>
                 <a
                   href={INSTAGRAM_URL ?? "#reflexoes"}
-                  className="mt-auto inline-flex items-center gap-2 pt-8 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-taupe transition-colors duration-300 hover:text-gold"
+                  className="mt-auto inline-flex items-center gap-2 pt-6 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-taupe transition-colors duration-300 hover:text-gold"
                 >
                   Ler reflexão
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />

@@ -29,7 +29,7 @@ export function SiteFooter() {
 
   return (
     <footer
-      className="border-t border-gold/40 px-5 py-16 sm:px-8 lg:py-20"
+      className="border-t border-gold/40 px-5 py-14 sm:px-8 lg:py-16"
       style={{ backgroundColor: "oklch(0.245 0.004 150)" }}
     >
       <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-12 md:grid-cols-3">
@@ -98,7 +98,7 @@ export function SiteFooter() {
         </nav>
       </div>
 
-      <div className="mx-auto mt-14 flex max-w-[1440px] flex-col gap-3 border-t border-offwhite/12 pt-8 text-[0.78rem] text-offwhite/55 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto mt-12 flex max-w-[1440px] flex-col gap-3 border-t border-offwhite/12 pt-8 text-[0.78rem] text-offwhite/55 sm:flex-row sm:items-center sm:justify-between">
         <p>© {year} Dalila Américo. Todos os direitos reservados.</p>
         <p>
           Desenvolvido por <span className="text-gold">Societates</span>
