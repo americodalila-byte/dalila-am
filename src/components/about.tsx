@@ -72,10 +72,6 @@ export function About() {
                 </li>
               ))}
             </ul>
-            <p className="mt-6 inline-flex items-center gap-2 text-[0.85rem] italic text-graphite">
-              <GraduationCap className="h-4 w-4 text-sage" strokeWidth={1} />
-              Especialista em Terapia Familiar Sistêmica
-            </p>
           </div>
         </div>
       </div>
