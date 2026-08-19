@@ -41,8 +41,7 @@ export function SystemicTherapy() {
       <div className="mx-auto max-w-[1440px]">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[45fr_55fr] lg:gap-20">
           <div style={revealStyle(shown)}>
-            <p className="text-[0.75rem] tracking-[0.14em] text-gold">03</p>
-            <p className="mt-3 text-[0.7rem] font-medium uppercase tracking-[0.3em] text-gold">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.3em] text-gold">
               Terapia Familiar Sistêmica
             </p>
 
