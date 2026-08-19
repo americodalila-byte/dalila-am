@@ -47,8 +47,7 @@ export function HowItWorks() {
     <section id="atendimento" ref={ref} className="bg-offwhite px-5 py-16 sm:px-8 lg:py-20">
       <div className="mx-auto max-w-[1440px]">
         <div style={revealStyle(shown)}>
-          <p className="text-[0.75rem] tracking-[0.14em] text-gold">04</p>
-          <h2 className="mt-4 font-serif text-[2.1rem] font-light uppercase tracking-[0.05em] text-graphite sm:text-[2.6rem] lg:text-[3.1rem]">
+          <h2 className="font-serif text-[2.1rem] font-light uppercase tracking-[0.05em] text-graphite sm:text-[2.6rem] lg:text-[3.1rem]">
             Como funciona o atendimento
           </h2>
           <div className="mt-6 h-px w-14 bg-gold" aria-hidden="true" />

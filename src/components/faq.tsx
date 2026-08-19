@@ -86,8 +86,7 @@ export function Faq() {
     <section id="faq" ref={ref} className="bg-offwhite px-5 py-16 sm:px-8 lg:py-20">
       <div className="mx-auto max-w-[1440px]">
         <div style={revealStyle(shown)}>
-          <p className="text-[0.75rem] tracking-[0.14em] text-gold">08</p>
-          <h2 className="mt-4 font-serif text-[2.1rem] font-light uppercase tracking-[0.05em] text-graphite sm:text-[2.4rem] lg:text-[2.75rem]">
+          <h2 className="font-serif text-[2.1rem] font-light uppercase tracking-[0.05em] text-graphite sm:text-[2.4rem] lg:text-[2.75rem]">
             Perguntas frequentes
           </h2>
           <div className="mt-6 h-px w-14 bg-gold" aria-hidden="true" />
