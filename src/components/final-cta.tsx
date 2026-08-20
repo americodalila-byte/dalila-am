@@ -47,7 +47,7 @@ export function FinalCta() {
     <section
       id="agendar"
       ref={ref}
-      className="relative overflow-hidden border-t border-fendi/25 px-5 py-14 sm:px-8 lg:py-16"
+      className="relative overflow-hidden border-t border-fendi/25 px-5 py-11 sm:px-8 lg:py-12"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 55%, var(--color-offwhite))" }}
     >
       <Sprig className="-left-8 top-2 h-28 w-44 -scale-x-100 sm:h-32 sm:w-52" />
@@ -55,11 +55,11 @@ export function FinalCta() {
 
       <div className="relative mx-auto max-w-[46rem] text-center" style={revealStyle(shown)}>
         <div className="mx-auto h-px w-12 bg-gold" aria-hidden="true" />
-        <h2 className="mx-auto mt-6 max-w-[34rem] font-serif text-[1.85rem] font-light leading-[1.22] text-graphite sm:text-[2.35rem] lg:text-[2.9rem]">
+        <h2 className="mx-auto mt-5 max-w-[32rem] font-serif text-[1.72rem] font-light leading-[1.2] text-graphite sm:text-[2.2rem] lg:text-[2.65rem]">
           Cuidar das suas relações também pode começar por compreender a sua própria história.
         </h2>
         <p
-          className="mx-auto mt-5 max-w-[34rem] text-[0.95rem] leading-[1.7] text-taupe"
+          className="mx-auto mt-4 max-w-[33rem] text-[0.95rem] leading-[1.7] text-taupe"
           style={revealStyle(shown, 140)}
         >
           Se você deseja conhecer melhor o processo de psicoterapia e verificar possibilidades de
@@ -67,14 +67,14 @@ export function FinalCta() {
         </p>
 
         <div
-          className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center"
+          className="mt-6 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center"
           style={revealStyle(shown, 240)}
         >
           <a
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center justify-center gap-3 whitespace-nowrap rounded-[16px] bg-graphite px-7 py-3.5 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90"
+            className="group inline-flex items-center justify-center gap-3 whitespace-nowrap h-[52px] rounded-[16px] bg-graphite px-7 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90"
           >
             Agendar consulta
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -83,7 +83,7 @@ export function FinalCta() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 whitespace-nowrap rounded-[16px] border border-graphite/25 px-7 py-3.5 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:text-gold"
+            className="inline-flex items-center justify-center gap-3 whitespace-nowrap h-[52px] rounded-[16px] border border-graphite/25 px-7 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:text-gold"
           >
             <WhatsappIcon className="h-4.5 w-4.5" />
             Conversar pelo WhatsApp
