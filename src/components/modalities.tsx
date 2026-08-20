@@ -17,8 +17,8 @@ const cards = [
   {
     Icon: MapPin,
     title: "Localização",
-    highlight: "Belo Horizonte • MG",
-    text: "Fácil acesso e ambiente pensado para o seu conforto.",
+    highlight: "Uberlândia • MG",
+    text: "R. Bernardo Cupertino, 704\nMartins, Uberlândia - MG\n38400-444",
     link: false,
   },
 ];
@@ -59,7 +59,7 @@ export function Modalities() {
                 {highlight && (
                   <p className="mt-3 text-[0.9rem] font-medium text-gold">{highlight}</p>
                 )}
-                <p className="mt-3 max-w-[16rem] text-[0.9375rem] leading-[1.7] text-taupe">
+                <p className="mt-3 max-w-[16rem] whitespace-pre-line text-[0.9375rem] leading-[1.7] text-taupe">
                   {text}
                 </p>
                 {link && (
