@@ -80,7 +80,14 @@ export function HowItWorks() {
                 </span>
               )}
 
-              <h3 className="mt-7 font-serif text-[1.35rem] font-light leading-[1.2] text-graphite sm:text-[1.5rem]">
+              <h3
+                className={[
+                  "mt-7 font-serif font-light leading-[1.2] text-graphite",
+                  title === "Acompanhamento psicológico"
+                    ? "text-[1.2rem] sm:text-[1.35rem]"
+                    : "text-[1.35rem] sm:text-[1.5rem]",
+                ].join(" ")}
+              >
                 {title}
               </h3>
               <p className="mt-3 max-w-[17rem] text-[0.9375rem] leading-[1.7] text-taupe">{text}</p>
