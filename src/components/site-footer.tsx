@@ -1,6 +1,6 @@
-import { Instagram, Mail, MapPin } from "lucide-react";
+import { Instagram, Mail, MapPin, ArrowUpRight } from "lucide-react";
 import logo from "@/assets/logo-dalila.png.asset.json";
-import { WHATSAPP_URL, INSTAGRAM_URL, INSTAGRAM_HANDLE, EMAIL, LOCATION } from "@/lib/contact";
+import { WHATSAPP_URL, INSTAGRAM_URL, INSTAGRAM_HANDLE, EMAIL } from "@/lib/contact";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -21,35 +21,53 @@ function WhatsappIcon({ className }: { className?: string }) {
   );
 }
 
+const MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=R.+Bernardo+Cupertino,+704+-+Martins,+Uberl%C3%A2ndia+-+MG,+38400-444";
+
+const navLinks = [
+  { label: "Sobre", href: "#sobre" },
+  { label: "Atuação", href: "#areas" },
+  { label: "Abordagem", href: "#terapia-sistemica" },
+  { label: "Atendimento", href: "#atendimento" },
+  { label: "FAQ", href: "#faq" },
+];
+
 const linkClass =
-  "inline-flex items-center gap-3 text-[0.9rem] text-offwhite/75 transition-colors duration-[250ms] hover:text-gold hover:underline hover:underline-offset-4 focus-visible:outline-gold";
+  "inline-flex items-center gap-2.5 text-[0.875rem] text-taupe transition-colors duration-[250ms] hover:text-gold hover:underline hover:underline-offset-4 focus-visible:outline-gold";
+
+const headingClass = "text-[0.66rem] font-medium uppercase tracking-[0.2em] text-graphite";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer
-      className="border-t border-gold/40 px-5 py-14 sm:px-8 lg:py-16"
-      style={{ backgroundColor: "oklch(0.245 0.004 150)" }}
-    >
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-12 md:grid-cols-3">
+    <footer className="border-t border-gold/50 bg-offwhite px-5 py-12 sm:px-8 lg:py-14">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1.2fr] lg:gap-12">
         <div>
-          <img
-            src={logo.url}
-            alt="Dalila Américo"
-            width={200}
-            height={68}
-            loading="lazy"
-            className="h-12 w-auto brightness-0 invert opacity-90"
-          />
-          <p className="mt-6 font-serif text-[1.35rem] font-light text-offwhite">Dalila Américo</p>
-          <p className="mt-1 text-[0.9rem] text-offwhite/70">Psicóloga</p>
-          <p className="mt-1 text-[0.8rem] tracking-[0.12em] text-gold">CRP 04/48200</p>
+          <img src={logo.url} alt="Dalila Américo" width={200} height={68} loading="lazy" className="h-11 w-auto" />
+          <p className="mt-5 font-serif text-[1.25rem] font-light text-graphite">Dalila Américo</p>
+          <p className="mt-1 text-[0.85rem] text-taupe">
+            Psicóloga <span className="text-fendi">•</span>{" "}
+            <span className="tracking-[0.1em] text-gold">CRP 04/48200</span>
+          </p>
         </div>
 
+        <nav aria-label="Navegação">
+          <p className={headingClass}>Navegação</p>
+          <ul className="mt-5 space-y-3">
+            {navLinks.map((item) => (
+              <li key={item.label}>
+                <a href={item.href} className={linkClass}>
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
         <nav aria-label="Contato">
-          <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-gold">Contato</p>
-          <ul className="mt-6 space-y-4">
+          <p className={headingClass}>Contato</p>
+          <ul className="mt-5 space-y-3">
             {INSTAGRAM_URL && (
               <li>
                 <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className={linkClass}>
@@ -72,18 +90,32 @@ export function SiteFooter() {
                 </a>
               </li>
             )}
-            {LOCATION && (
-              <li className="inline-flex items-center gap-3 text-[0.9rem] text-offwhite/75">
-                <MapPin className="h-4 w-4" strokeWidth={1.2} />
-                {LOCATION}
-              </li>
-            )}
           </ul>
         </nav>
 
-        <nav aria-label="Informações legais">
-          <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-gold">Legal</p>
-          <ul className="mt-6 space-y-4">
+        <div>
+          <p className={headingClass}>Localização</p>
+          <p className="mt-5 flex gap-2.5 text-[0.875rem] leading-[1.7] text-taupe">
+            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={1.2} />
+            <span>
+              R. Bernardo Cupertino, 704
+              <br />
+              Martins, Uberlândia - MG
+              <br />
+              38400-444
+            </span>
+          </p>
+          <a
+            href={MAPS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-1.5 text-[0.78rem] font-medium uppercase tracking-[0.14em] text-graphite transition-colors duration-[250ms] hover:text-gold"
+          >
+            Ver no Google Maps
+            <ArrowUpRight className="h-3.5 w-3.5" />
+          </a>
+
+          <ul className="mt-6 space-y-2.5">
             <li>
               <a href="#" className={linkClass}>
                 Política de Privacidade
@@ -95,10 +127,10 @@ export function SiteFooter() {
               </a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
 
-      <div className="mx-auto mt-12 flex max-w-[1440px] flex-col gap-3 border-t border-offwhite/12 pt-8 text-[0.78rem] text-offwhite/55 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto mt-10 flex max-w-[1440px] flex-col gap-2 border-t border-fendi/30 pt-6 text-[0.76rem] text-taupe sm:flex-row sm:items-center sm:justify-between">
         <p>© {year} Dalila Américo. Todos os direitos reservados.</p>
         <p>
           Desenvolvido por <span className="text-gold">Societates</span>

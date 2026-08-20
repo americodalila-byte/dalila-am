@@ -21,19 +21,19 @@ function WhatsappIcon({ className }: { className?: string }) {
   );
 }
 
-function BotanicalCorner({ className = "" }: { className?: string }) {
+function Sprig({ className = "" }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 200 160"
+      viewBox="0 0 200 120"
       fill="none"
       aria-hidden="true"
-      className={`pointer-events-none absolute text-gold/25 ${className}`}
+      className={`pointer-events-none absolute text-gold/20 ${className}`}
     >
-      <path d="M10 150C60 150 120 120 170 40" stroke="currentColor" strokeWidth="0.8" strokeLinecap="round" />
+      <path d="M10 110C60 110 130 88 190 20" stroke="currentColor" strokeWidth="0.7" strokeLinecap="round" />
       <path
-        d="M170 40c-9 .6-15 3.6-19 9 6.5 1.6 13-1 19-9Zm0 0c-2.5-8.5-1-14.8 4-19.6 3.5 5.8 3 12.3-4 19.6Zm0 0c7-1.5 12.5-.5 17 3.5-5 4-11 4.3-17-3.5ZM122 87c-7-2-12.5-1.2-17 2.5 4.8 3.8 10.5 4 17-2.5ZM74 118c-7-2-12.5-1.2-17 2.5 4.8 3.8 10.5 4 17-2.5Z"
+        d="M190 20c-8 .6-13.5 3.2-17 8 5.8 1.4 11.6-.9 17-8Zm0 0c-2.2-7.6-.9-13.2 3.6-17.5 3.1 5.2 2.7 11-3.6 17.5ZM128 61c-6.3-1.8-11.2-1-15.2 2.2 4.3 3.4 9.4 3.6 15.2-2.2ZM72 84c-6.3-1.8-11.2-1-15.2 2.2 4.3 3.4 9.4 3.6 15.2-2.2Z"
         stroke="currentColor"
-        strokeWidth="0.7"
+        strokeWidth="0.6"
         strokeLinejoin="round"
       />
     </svg>
@@ -47,34 +47,34 @@ export function FinalCta() {
     <section
       id="agendar"
       ref={ref}
-      className="relative overflow-hidden px-5 py-20 sm:px-8 lg:py-24"
-      style={{ backgroundColor: "oklch(0.245 0.004 150)" }}
+      className="relative overflow-hidden border-t border-fendi/25 px-5 py-14 sm:px-8 lg:py-16"
+      style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 55%, var(--color-offwhite))" }}
     >
-      <BotanicalCorner className="-left-10 top-4 h-40 w-52 -scale-x-100 opacity-70 sm:h-48 sm:w-64" />
-      <BotanicalCorner className="bottom-0 right-0 h-48 w-64 sm:h-60 sm:w-80" />
+      <Sprig className="-left-8 top-2 h-28 w-44 -scale-x-100 sm:h-32 sm:w-52" />
+      <Sprig className="bottom-0 right-0 h-28 w-44 sm:h-32 sm:w-52" />
 
-      <div className="relative mx-auto max-w-[52rem] text-center" style={revealStyle(shown)}>
-        <div className="mx-auto h-px w-14 bg-gold" aria-hidden="true" />
-        <h2 className="mt-8 font-serif text-[2.2rem] font-light leading-[1.18] text-offwhite sm:text-[3rem] lg:text-[3.4rem]">
+      <div className="relative mx-auto max-w-[46rem] text-center" style={revealStyle(shown)}>
+        <div className="mx-auto h-px w-12 bg-gold" aria-hidden="true" />
+        <h2 className="mx-auto mt-6 max-w-[34rem] font-serif text-[1.85rem] font-light leading-[1.22] text-graphite sm:text-[2.35rem] lg:text-[2.9rem]">
           Cuidar das suas relações também pode começar por compreender a sua própria história.
         </h2>
         <p
-          className="mx-auto mt-8 max-w-[38rem] text-[0.9375rem] leading-[1.85] text-offwhite/80"
-          style={revealStyle(shown, 160)}
+          className="mx-auto mt-5 max-w-[34rem] text-[0.95rem] leading-[1.7] text-taupe"
+          style={revealStyle(shown, 140)}
         >
           Se você deseja conhecer melhor o processo de psicoterapia e verificar possibilidades de
           atendimento, entre em contato.
         </p>
 
         <div
-          className="mt-12 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center"
-          style={revealStyle(shown, 280)}
+          className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center"
+          style={revealStyle(shown, 240)}
         >
           <a
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center justify-center gap-3 rounded-[16px] bg-gold px-8 py-4 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:bg-wood"
+            className="group inline-flex items-center justify-center gap-3 whitespace-nowrap rounded-[16px] bg-graphite px-7 py-3.5 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90"
           >
             Agendar consulta
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -83,9 +83,9 @@ export function FinalCta() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 rounded-[16px] border border-offwhite/35 px-8 py-4 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:text-gold"
+            className="inline-flex items-center justify-center gap-3 whitespace-nowrap rounded-[16px] border border-graphite/25 px-7 py-3.5 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:text-gold"
           >
-            <WhatsappIcon className="h-5 w-5" />
+            <WhatsappIcon className="h-4.5 w-4.5" />
             Conversar pelo WhatsApp
           </a>
         </div>
