@@ -1,4 +1,4 @@
-import { Instagram, Mail, MapPin, ArrowUpRight } from "lucide-react";
+import { Instagram, Mail, MapPin } from "lucide-react";
 import logo from "@/assets/logo-dalila.png.asset.json";
 import { WHATSAPP_URL, INSTAGRAM_URL, INSTAGRAM_HANDLE, EMAIL } from "@/lib/contact";
 
@@ -21,9 +21,6 @@ function WhatsappIcon({ className }: { className?: string }) {
   );
 }
 
-const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=R.+Bernardo+Cupertino,+704+-+Martins,+Uberl%C3%A2ndia+-+MG,+38400-444";
-
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
   { label: "Atuação", href: "#areas" },
@@ -41,15 +38,15 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gold/50 bg-offwhite px-5 py-9 sm:px-8 lg:py-10">
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_1.2fr_1.2fr] lg:gap-12">
+    <footer className="border-t border-gold/50 bg-offwhite px-5 py-8 sm:px-8 lg:py-9">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_1.2fr_1.2fr] lg:items-start lg:gap-12">
         <div>
           <img src={logo.url} alt="Dalila Américo" width={200} height={68} loading="lazy" className="h-11 w-auto" />
         </div>
 
         <nav aria-label="Navegação">
           <p className={headingClass}>Navegação</p>
-          <ul className="mt-4 space-y-2.5">
+          <ul className="mt-3.5 space-y-2">
             {navLinks.map((item) => (
               <li key={item.label}>
                 <a href={item.href} className={linkClass}>
@@ -62,7 +59,7 @@ export function SiteFooter() {
 
         <nav aria-label="Contato">
           <p className={headingClass}>Contato</p>
-          <ul className="mt-4 space-y-2.5">
+          <ul className="mt-3.5 space-y-2">
             {INSTAGRAM_URL && (
               <li>
                 <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className={linkClass}>
@@ -86,14 +83,14 @@ export function SiteFooter() {
               </li>
             )}
           </ul>
-          <p className="mt-4 max-w-[17rem] text-[0.78rem] leading-[1.65] text-taupe/90">
+          <p className="mt-3 max-w-[17rem] text-[0.78rem] leading-[1.65] text-taupe/90">
             Acompanhe conteúdos e entre em contato para agendamentos e dúvidas.
           </p>
         </nav>
 
         <div>
           <p className={headingClass}>Localização</p>
-          <p className="mt-4 flex gap-2.5 text-[0.85rem] leading-[1.65] text-taupe">
+          <p className="mt-3.5 flex gap-2.5 text-[0.85rem] leading-[1.65] text-taupe">
             <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={1.2} />
             <span>
               R. Bernardo Cupertino, 704
@@ -101,36 +98,14 @@ export function SiteFooter() {
               Martins, Uberlândia - MG
             </span>
           </p>
-          <a
-            href={MAPS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-1.5 text-[0.72rem] font-medium uppercase tracking-[0.14em] text-graphite transition-colors duration-[250ms] hover:text-gold focus-visible:outline-gold"
-          >
-            Ver no Google Maps
-            <ArrowUpRight className="h-3.5 w-3.5" />
-          </a>
-
-          <ul className="mt-4 space-y-2">
-            <li>
-              <a href="#" className={linkClass}>
-                Política de Privacidade
-              </a>
-            </li>
-            <li>
-              <a href="#" className={linkClass}>
-                LGPD
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
 
-      <div className="mx-auto mt-7 flex max-w-[1440px] flex-col gap-2 border-t border-fendi/30 pt-5 text-[0.76rem] text-taupe sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto mt-6 flex max-w-[1440px] flex-col gap-2 border-t border-fendi/30 pt-4 text-[0.76rem] text-taupe sm:flex-row sm:items-center sm:justify-between">
         <p>© {year} Dalila Américo. Todos os direitos reservados.</p>
         <p>
           Desenvolvido por{" "}
-          <span className="font-semibold uppercase tracking-[0.12em] text-gold">Societates</span>
+          <span className="font-bold text-gold">Societates</span>
         </p>
       </div>
     </footer>
