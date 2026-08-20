@@ -51,12 +51,12 @@ function FaqItem({
           aria-expanded={open}
           aria-controls={`${id}-panel`}
           id={`${id}-button`}
-          className="flex w-full items-start justify-between gap-6 py-6 text-left focus-visible:outline-gold"
+          className="flex w-full items-start justify-between gap-6 py-5 text-left focus-visible:outline-gold"
         >
           <span className="font-serif text-[1.2rem] font-light leading-[1.35] text-graphite sm:text-[1.3rem]">
             {q}
           </span>
-          <span className="relative mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-gold/70 text-gold">
+          <span className="relative mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-gold/70 text-gold">
             <span className="block h-px w-3 bg-current" aria-hidden="true" />
             <span
               className={`absolute block h-px w-3 bg-current transition-transform duration-300 ${open ? "rotate-0" : "rotate-90"}`}
@@ -72,7 +72,7 @@ function FaqItem({
         className={`grid transition-all duration-500 ease-out ${open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
       >
         <div className="overflow-hidden">
-          <p className="max-w-[34rem] pb-7 text-[0.9375rem] leading-[1.85] text-taupe">{a}</p>
+          <p className="max-w-[34rem] pb-6 text-[0.9375rem] leading-[1.85] text-taupe">{a}</p>
         </div>
       </div>
     </div>
@@ -83,16 +83,16 @@ export function Faq() {
   const { ref, shown } = useReveal<HTMLElement>();
 
   return (
-    <section id="faq" ref={ref} className="bg-offwhite px-5 py-16 sm:px-8 lg:py-20">
+    <section id="faq" ref={ref} className="bg-offwhite px-5 py-11 sm:px-8 lg:py-14">
       <div className="mx-auto max-w-[1440px]">
         <div style={revealStyle(shown)}>
-          <h2 className="font-serif text-[2.1rem] font-light uppercase tracking-[0.05em] text-graphite sm:text-[2.4rem] lg:text-[2.75rem]">
+          <h2 className="font-serif text-[1.9rem] font-light uppercase tracking-[0.05em] text-graphite sm:text-[2.2rem] lg:text-[2.5rem]">
             Perguntas frequentes
           </h2>
-          <div className="mt-6 h-px w-14 bg-gold" aria-hidden="true" />
+          <div className="mt-5 h-px w-14 bg-gold" aria-hidden="true" />
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-x-16 lg:mt-12 lg:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-x-16 lg:mt-10 lg:grid-cols-2">
           {faqs.map((item, i) => (
             <FaqItem key={item.q} {...item} shown={shown} delay={160 + i * 70} />
           ))}
