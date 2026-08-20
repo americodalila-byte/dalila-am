@@ -44,34 +44,34 @@ export function HowItWorks() {
   const { ref, shown } = useReveal<HTMLElement>();
 
   return (
-    <section id="atendimento" ref={ref} className="bg-offwhite px-5 py-16 sm:px-8 lg:py-20">
+    <section id="atendimento" ref={ref} className="bg-offwhite px-5 py-12 sm:px-8 lg:py-16">
       <div className="mx-auto max-w-[1440px]">
         <div style={revealStyle(shown)}>
-          <h2 className="font-serif text-[2.1rem] font-light uppercase tracking-[0.05em] text-graphite sm:text-[2.6rem] lg:text-[3.1rem]">
+          <h2 className="font-serif text-[1.95rem] font-light uppercase tracking-[0.05em] text-graphite sm:text-[2.4rem] lg:text-[2.8rem]">
             Como funciona o atendimento
           </h2>
-          <div className="mt-6 h-px w-14 bg-gold" aria-hidden="true" />
+          <div className="mt-5 h-px w-14 bg-gold" aria-hidden="true" />
         </div>
 
-        <ol className="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4 lg:gap-8">
+        <ol className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4 lg:gap-8">
           {steps.map(({ n, Icon, title, text }, i) => (
             <li
               key={n}
-              className="relative flex flex-col items-center text-center"
+              className="relative grid grid-rows-[auto_auto_1fr_auto] justify-items-center text-center"
               style={revealStyle(shown, 200 + i * 120)}
             >
               <div className="flex items-center gap-3">
                 <span className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/60 font-serif text-[1rem] text-gold">
                   {n}
                 </span>
-                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-ivory/60">
-                  <Icon className="h-7 w-7 text-taupe" strokeWidth={1} />
+                <span className="flex h-14 w-14 items-center justify-center rounded-full bg-ivory/60">
+                  <Icon className="h-6 w-6 text-taupe" strokeWidth={1.05} />
                 </span>
               </div>
 
               {i < steps.length - 1 && (
                 <span
-                  className="pointer-events-none absolute left-[calc(50%+5.5rem)] right-[-4rem] top-8 hidden items-center lg:flex"
+                  className="pointer-events-none absolute left-[calc(50%+5rem)] right-[-3rem] top-[26px] hidden items-center lg:flex"
                   aria-hidden="true"
                 >
                   <span className="h-px flex-1 bg-fendi/50" />
@@ -80,18 +80,11 @@ export function HowItWorks() {
                 </span>
               )}
 
-              <h3
-                className={[
-                  "mt-7 font-serif font-light leading-[1.2] text-graphite",
-                  title === "Acompanhamento psicológico"
-                    ? "text-[1.2rem] sm:text-[1.35rem]"
-                    : "text-[1.35rem] sm:text-[1.5rem]",
-                ].join(" ")}
-              >
+              <h3 className="mt-6 flex min-h-[3.4rem] items-start justify-center font-serif text-[1.28rem] font-light leading-[1.2] text-graphite sm:text-[1.4rem]">
                 {title}
               </h3>
-              <p className="mt-3 max-w-[17rem] text-[0.9375rem] leading-[1.7] text-taupe">{text}</p>
-              <div className="mt-6 h-px w-10 bg-gold/70" aria-hidden="true" />
+              <p className="mt-2 max-w-[17rem] text-[0.9rem] leading-[1.7] text-taupe">{text}</p>
+              <div className="mt-5 h-px w-10 bg-gold/70" aria-hidden="true" />
             </li>
           ))}
         </ol>

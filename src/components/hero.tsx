@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import dalila from "@/assets/dalila.png.asset.json";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -38,7 +39,7 @@ export function Hero() {
             className="rise mt-[28px] max-w-[37.5rem] font-serif font-light tracking-[-0.01em] text-graphite"
             style={{
               animationDelay: "160ms",
-              fontSize: "clamp(2.3rem, 4.5vw, 4.2rem)",
+              fontSize: "clamp(2.2rem, 4.2vw, 3.95rem)",
               lineHeight: 1.01,
             }}
           >
@@ -48,7 +49,7 @@ export function Hero() {
           <div className="rise mt-[20px] h-px w-16 bg-gold" style={{ animationDelay: "260ms" }} aria-hidden="true" />
 
           <p
-            className="rise mt-[22px] max-w-[30rem] text-[1.0625rem] leading-[1.7] text-taupe"
+            className="rise mt-[22px] max-w-[27rem] text-[1.0625rem] leading-[1.7] text-taupe"
             style={{ animationDelay: "320ms" }}
           >
             A psicoterapia é um espaço de acolhimento, escuta e compreensão para que você possa
@@ -68,7 +69,9 @@ export function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <a
-              href="https://wa.me/5541000000000"
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex h-[54px] w-full items-center justify-center gap-3 whitespace-nowrap rounded-[18px] border border-gold/60 px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-ivory/60 sm:w-[310px]"
             >
               <WhatsappIcon className="h-5 w-5 text-gold" />

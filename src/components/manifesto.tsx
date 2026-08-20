@@ -1,6 +1,6 @@
 export function Manifesto() {
   return (
-    <section className="flex items-center justify-center bg-ivory/70 px-5 py-10 sm:px-8 lg:py-14">
+    <section className="flex items-center justify-center bg-ivory/70 px-5 py-7 sm:px-8 lg:py-10">
       <div className="mx-auto max-w-3xl text-center">
         <svg
           className="mx-auto h-5 w-5 text-gold"
@@ -15,7 +15,7 @@ export function Manifesto() {
             strokeLinejoin="round"
           />
         </svg>
-        <p className="mt-4 font-serif text-xl font-light leading-[1.35] text-graphite sm:text-[1.75rem]">
+        <p className="mt-3 font-serif text-lg font-light leading-[1.35] text-graphite sm:text-[1.6rem]">
           Relacionamentos influenciam profundamente
           <br className="hidden sm:block" /> a forma como vivemos, sentimos e nos percebemos.
         </p>
