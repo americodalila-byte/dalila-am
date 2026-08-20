@@ -18,25 +18,25 @@ const steps = [
     n: "01",
     Icon: WhatsappIcon,
     title: "Entre em contato",
-    text: "Fale pelo WhatsApp ou preencha o formulário do site.",
+    text: "Fale pelo WhatsApp para tirar suas dúvidas e verificar a disponibilidade de horários.",
   },
   {
     n: "02",
     Icon: CalendarDays,
-    title: "Escolha um horário",
-    text: "Encontraremos juntos o melhor dia e horário para você.",
+    title: "Modalidade e horário",
+    text: "Escolha entre atendimento presencial ou on-line e verifique as opções de horários disponíveis.",
   },
   {
     n: "03",
     Icon: User,
     title: "Primeira sessão",
-    text: "Um espaço seguro para conhecer sua história e seus objetivos.",
+    text: "Um primeiro encontro para compreender sua história, sua demanda e o que você busca neste momento.",
   },
   {
     n: "04",
     Icon: Sprout,
     title: "Acompanhamento psicológico",
-    text: "Continuidade do processo terapêutico com constância e cuidado.",
+    text: "A continuidade do atendimento é construída de acordo com as necessidades do processo terapêutico.",
   },
 ];
 
