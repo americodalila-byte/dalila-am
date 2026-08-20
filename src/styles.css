@@ -32,7 +32,20 @@
   animation: rise 1s cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section[id],
+[id] {
+  scroll-margin-top: 104px;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   *,
   *::before,
   *::after {
