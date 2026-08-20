@@ -20,7 +20,7 @@ const cards = [
   {
     Icon: Heart,
     title: "Vínculos",
-    text: "Os vínculos possuem significados próprios e fazem parte das diferentes experiências relacionais.",
+    text: "Os vínculos possuem significados próprios e fazem parte das experiências relacionais.",
   },
 ];
 
@@ -31,10 +31,10 @@ export function SystemicTherapy() {
     <section
       id="terapia-sistemica"
       ref={ref}
-      className="px-5 py-16 sm:px-8 lg:py-20"
+      className="px-5 py-12 sm:px-8 lg:py-16"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 30%, var(--color-offwhite))" }}
     >
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-14 lg:grid-cols-[48fr_52fr] lg:gap-16">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-11 lg:grid-cols-[48fr_52fr] lg:gap-14">
         {/* Left */}
         <div style={revealStyle(shown)}>
           <p className="text-[0.7rem] font-medium uppercase tracking-[0.3em] text-gold">
@@ -44,7 +44,7 @@ export function SystemicTherapy() {
           <div className="mt-4 h-px w-10 bg-gold/70" aria-hidden="true" />
 
           <h2
-            className="mt-8 font-serif text-[2.4rem] font-light leading-[1.08] text-graphite sm:text-[3rem] lg:text-[3.6rem]"
+            className="mt-6 font-serif text-[2.1rem] font-light leading-[1.08] text-graphite sm:text-[2.6rem] lg:text-[3.1rem]"
             style={revealStyle(shown, 120)}
           >
             Compreender o todo
@@ -55,14 +55,14 @@ export function SystemicTherapy() {
           </h2>
 
           {/* decorative detail */}
-          <div className="mt-8 flex items-center gap-3 text-gold" aria-hidden="true">
-            <span className="h-px w-12 bg-gold/70" />
-            <span className="h-2 w-2 rotate-45 border border-gold/80" />
-            <span className="h-px w-12 bg-gold/70" />
+          <div className="mt-6 flex items-center gap-2.5 text-gold" aria-hidden="true">
+            <span className="h-px w-9 bg-gold/70" />
+            <span className="h-1.5 w-1.5 rotate-45 border border-gold/80" />
+            <span className="h-px w-9 bg-gold/70" />
           </div>
 
           <p
-            className="mt-10 max-w-[32rem] text-[1.0625rem] leading-[1.8] text-taupe"
+            className="mt-7 max-w-[30rem] text-[1rem] leading-[1.75] text-taupe"
             style={revealStyle(shown, 200)}
           >
             A Terapia Familiar Sistêmica considera que cada pessoa faz parte de diferentes
@@ -73,25 +73,25 @@ export function SystemicTherapy() {
         </div>
 
         {/* Right — 2x2 grid */}
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-5">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {cards.map(({ Icon, title, text }, i) => (
             <article
               key={title}
               style={revealStyle(shown, 240 + i * 90)}
-              className="group rounded-[22px] border border-fendi/35 bg-offwhite/70 p-6 transition-all duration-300 hover:-translate-y-[3px] hover:border-fendi/60 sm:p-7 lg:p-8"
+              className="group grid h-full grid-rows-[auto_auto_auto_1fr] rounded-[20px] border border-fendi/35 bg-offwhite/70 p-5 transition-all duration-300 hover:-translate-y-[2px] hover:border-fendi/60 sm:p-6"
             >
               <Icon
-                className="h-7 w-7 text-gold transition-colors duration-300 group-hover:text-wood"
+                className="h-6 w-6 text-gold transition-colors duration-300 group-hover:text-wood"
                 strokeWidth={1}
               />
 
-              <div className="mt-5 h-px w-7 bg-gold/70" aria-hidden="true" />
+              <div className="mt-4 h-px w-7 bg-gold/70" aria-hidden="true" />
 
-              <h3 className="mt-4 font-serif text-[1.35rem] font-light leading-[1.15] text-graphite lg:text-[1.5rem]">
+              <h3 className="mt-3 font-serif text-[1.2rem] font-light leading-[1.15] text-graphite lg:text-[1.32rem]">
                 {title}
               </h3>
 
-              <p className="mt-3 text-[0.85rem] leading-[1.7] text-taupe">{text}</p>
+              <p className="mt-2.5 text-[0.82rem] leading-[1.65] text-taupe">{text}</p>
             </article>
           ))}
         </div>
