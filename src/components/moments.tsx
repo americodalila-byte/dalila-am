@@ -30,29 +30,29 @@ export function Moments() {
   const { ref, shown } = useReveal<HTMLElement>();
 
   return (
-    <section id="momentos" ref={ref} className="bg-offwhite px-5 pt-12 pb-12 sm:px-8 lg:pt-14 lg:pb-16">
+    <section id="momentos" ref={ref} className="bg-offwhite px-5 pt-10 pb-10 sm:px-8 lg:pt-12 lg:pb-14">
       <div className="mx-auto max-w-[1440px]">
         <div className="mx-auto max-w-5xl text-center" style={revealStyle(shown)}>
           <BotanicalMark />
-          <h2 className="mt-6 font-serif text-[2rem] font-light uppercase leading-[1.18] tracking-[0.015em] text-graphite sm:text-[2.4rem] lg:text-[2.6rem]">
+          <h2 className="mt-5 font-serif text-[1.85rem] font-light uppercase leading-[1.18] tracking-[0.015em] text-graphite sm:text-[2.2rem] lg:text-[2.45rem]">
             Em que momentos a
             <br className="hidden sm:block" /> psicoterapia pode fazer sentido?
           </h2>
-          <div className="mx-auto mt-7 h-px w-14 bg-gold" aria-hidden="true" />
-          <p className="mx-auto mt-7 max-w-[38rem] text-[1.0625rem] leading-[1.75] text-taupe">
+          <div className="mx-auto mt-5 h-px w-14 bg-gold" aria-hidden="true" />
+          <p className="mx-auto mt-5 max-w-[36rem] text-[1rem] leading-[1.75] text-taupe">
             A vida nos apresenta desafios que podem afetar nossos relacionamentos, emoções e
             escolhas. Buscar apoio psicológico pode ser um movimento de cuidado e compreensão.
           </p>
         </div>
 
-        <ul className="mt-12 grid grid-cols-2 gap-y-10 sm:grid-cols-4 lg:mt-14 lg:grid-cols-7 lg:gap-y-0">
+        <ul className="mt-10 grid grid-cols-2 gap-y-9 sm:grid-cols-4 lg:mt-12 lg:grid-cols-7 lg:gap-y-0">
           {items.map(({ Icon, label }, i) => (
             <li
               key={label}
-              className="flex flex-col items-center px-4 text-center lg:border-l lg:border-fendi/25 lg:first:border-l-0"
+              className="grid grid-rows-[auto_1fr_auto] justify-items-center px-4 text-center lg:border-l lg:border-fendi/25 lg:first:border-l-0"
               style={revealStyle(shown, 220 + i * 90)}
             >
-              <Icon className="h-9 w-9 text-sage" strokeWidth={1} />
+              <Icon className="h-9 w-9 text-taupe" strokeWidth={1.05} />
               <p className="mt-5 whitespace-pre-line text-[0.9rem] leading-[1.6] text-graphite">
                 {label}
               </p>
