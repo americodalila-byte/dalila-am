@@ -73,25 +73,25 @@ export function SystemicTherapy() {
         </div>
 
         {/* Right — 2x2 grid */}
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-6">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-5">
           {cards.map(({ Icon, title, text }, i) => (
             <article
               key={title}
               style={revealStyle(shown, 240 + i * 90)}
-              className="group rounded-[22px] border border-fendi/35 bg-offwhite/70 p-8 transition-all duration-300 hover:-translate-y-[3px] hover:border-fendi/60 sm:p-9 lg:p-10"
+              className="group rounded-[22px] border border-fendi/35 bg-offwhite/70 p-6 transition-all duration-300 hover:-translate-y-[3px] hover:border-fendi/60 sm:p-7 lg:p-8"
             >
               <Icon
-                className="h-8 w-8 text-gold transition-colors duration-300 group-hover:text-wood"
+                className="h-7 w-7 text-gold transition-colors duration-300 group-hover:text-wood"
                 strokeWidth={1}
               />
 
-              <div className="mt-7 h-px w-8 bg-gold/70" aria-hidden="true" />
+              <div className="mt-5 h-px w-7 bg-gold/70" aria-hidden="true" />
 
-              <h3 className="mt-5 font-serif text-[1.75rem] font-light leading-[1.15] text-graphite lg:text-[1.95rem]">
+              <h3 className="mt-4 font-serif text-[1.35rem] font-light leading-[1.15] text-graphite lg:text-[1.5rem]">
                 {title}
               </h3>
 
-              <p className="mt-4 text-[0.9375rem] leading-[1.75] text-taupe">{text}</p>
+              <p className="mt-3 text-[0.85rem] leading-[1.7] text-taupe">{text}</p>
             </article>
           ))}
         </div>
