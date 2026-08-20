@@ -17,8 +17,8 @@ const cards = [
   {
     Icon: MapPin,
     title: "Localização",
-    highlight: "Belo Horizonte • MG",
-    text: "Fácil acesso e ambiente pensado para o seu conforto.",
+    highlight: "Uberlândia • MG",
+    text: "R. Bernardo Cupertino, 704\nMartins, Uberlândia - MG\n38400-444",
     link: false,
   },
 ];
