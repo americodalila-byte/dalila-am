@@ -2,7 +2,7 @@ import dalilaSobre from "@/assets/dalila-sobre.png.asset.json";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
 
 const formacao = [
-  "Graduação em Psicologia",
+  "Psicologia",
   "Especialização em Terapia Familiar Sistêmica",
 ];
 
@@ -38,21 +38,31 @@ export function About() {
             </h2>
 
             <p className="mt-2 text-[0.68rem] font-medium uppercase tracking-[0.24em] text-gold">
-              Psicóloga • CRP 04/48200
+              Psicóloga | Terapeuta Familiar Sistêmica • CRP 04/48200
             </p>
 
             <div className="mt-5 h-px w-14 bg-gold" aria-hidden="true" />
           </div>
 
           {/* Bloco 2 — Apresentação */}
-          <p
-            className="mt-7 max-w-[31rem] text-[1.0625rem] leading-[1.75] text-taupe"
-            style={revealStyle(shown, 260)}
-          >
-            Acredito que cada história carrega significados únicos e merece ser acolhida com
-            respeito e cuidado. Meu trabalho busca oferecer um espaço de escuta para compreender
-            relações, emoções, escolhas e experiências de maneira singular.
-          </p>
+          <div className="mt-7 max-w-[31rem] space-y-4" style={revealStyle(shown, 260)}>
+            <p className="text-[1.0625rem] leading-[1.75] text-graphite">
+              Acredito que nenhuma história começa apenas no momento presente.
+            </p>
+            <p className="text-[1.0625rem] leading-[1.75] text-taupe">
+              Somos construídos também nas relações que vivemos, nos vínculos que estabelecemos e
+              nos diferentes contextos que atravessam nossa história.
+            </p>
+            <p className="text-[1.0625rem] leading-[1.75] text-taupe">
+              Por isso, meu olhar terapêutico é também relacional: busco compreender não apenas o
+              que você está vivendo, mas como suas experiências, vínculos e contexto se conectam ao
+              momento atual.
+            </p>
+            <p className="text-[1.0625rem] leading-[1.75] text-taupe">
+              Meu compromisso é oferecer uma escuta cuidadosa e respeitosa, ajudando cada pessoa,
+              casal ou família a ampliar sua compreensão e construir novas possibilidades.
+            </p>
+          </div>
 
           {/* Bloco 3 — Formação e especialização */}
           <div
@@ -60,7 +70,7 @@ export function About() {
             style={revealStyle(shown, 380)}
           >
             <h3 className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-gold">
-              Formação e especialização
+              Formação
             </h3>
             <ul className="mt-4 space-y-2.5">
               {formacao.map((item) => (

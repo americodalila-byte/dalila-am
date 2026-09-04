@@ -1,5 +1,6 @@
-import { CalendarDays, User, Sprout } from "lucide-react";
+import { CalendarDays, User, Sprout, ArrowRight } from "lucide-react";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -18,25 +19,25 @@ const steps = [
     n: "01",
     Icon: WhatsappIcon,
     title: "Entre em contato",
-    text: "Fale pelo WhatsApp para tirar suas dúvidas e verificar a disponibilidade de horários.",
+    text: "Fale comigo pelo WhatsApp para tirar suas dúvidas e verificar a disponibilidade de horários.",
   },
   {
     n: "02",
     Icon: CalendarDays,
-    title: "Modalidade e horário",
-    text: "Escolha entre atendimento presencial ou on-line e verifique as opções de horários disponíveis.",
+    title: "Escolha o formato",
+    text: "O atendimento pode ser presencial, em Uberlândia, ou on-line, de onde você estiver.",
   },
   {
     n: "03",
     Icon: User,
-    title: "Primeira sessão",
-    text: "Um primeiro encontro para compreender sua história, sua demanda e o que você busca neste momento.",
+    title: "Primeiro encontro",
+    text: "Um momento para conhecer você, compreender o que o trouxe até aqui e conversarmos sobre o que espera da terapia.",
   },
   {
     n: "04",
     Icon: Sprout,
-    title: "Acompanhamento psicológico",
-    text: "A continuidade do atendimento é construída de acordo com as necessidades do processo terapêutico.",
+    title: "Seguimos o processo",
+    text: "A partir dos primeiros encontros, construímos juntos um caminho terapêutico de acordo com suas necessidades e objetivos.",
   },
 ];
 
@@ -88,6 +89,18 @@ export function HowItWorks() {
             </li>
           ))}
         </ol>
+
+        <div className="mt-11 flex justify-center" style={revealStyle(shown, 720)}>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex h-[54px] items-center justify-center gap-3 whitespace-nowrap rounded-[18px] bg-graphite px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90"
+          >
+            Agendar primeiro atendimento
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </a>
+        </div>
       </div>
     </section>
   );
