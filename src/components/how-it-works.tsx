@@ -89,6 +89,18 @@ export function HowItWorks() {
             </li>
           ))}
         </ol>
+
+        <div className="mt-11 flex justify-center" style={revealStyle(shown, 720)}>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex h-[54px] items-center justify-center gap-3 whitespace-nowrap rounded-[18px] bg-graphite px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90"
+          >
+            Agendar primeiro atendimento
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </a>
+        </div>
       </div>
     </section>
   );
