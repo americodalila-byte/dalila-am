@@ -1,26 +1,26 @@
-import { Users, Home, MessageCircle, Heart } from "lucide-react";
+import { Users, Home, MessageCircle, GitBranch } from "lucide-react";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
 
 const cards = [
   {
     Icon: Users,
     title: "Relações",
-    text: "Observamos como as relações e os vínculos fazem parte da experiência de cada pessoa.",
+    text: "A maneira como nos relacionamos revela aprendizados, experiências e formas de estar com o outro.",
   },
   {
     Icon: Home,
     title: "Contexto",
-    text: "Histórias, experiências e contextos também fazem parte da compreensão psicológica.",
+    text: "Família, trabalho, cultura e diferentes fases da vida também participam da construção de quem somos.",
+  },
+  {
+    Icon: GitBranch,
+    title: "Aspectos Geracionais",
+    text: "Valores, lealdades, padrões de interação e limites podem atravessar gerações e permanecer presentes na forma como vivemos e nos relacionamos.",
   },
   {
     Icon: MessageCircle,
     title: "Comunicação",
-    text: "A forma como nos comunicamos influencia a construção e a manutenção das relações.",
-  },
-  {
-    Icon: Heart,
-    title: "Vínculos",
-    text: "Os vínculos possuem significados próprios e fazem parte das experiências relacionais.",
+    text: "Comunicar vai além das palavras. O que dizemos, o que silenciamos e a forma como interpretamos o outro influenciam nossas relações e conexões.",
   },
 ];
 
@@ -49,9 +49,9 @@ export function SystemicTherapy() {
           >
             Compreender o todo
             <br />
-            para compreender as
+            para compreender
             <br />
-            relações.
+            você.
           </h2>
 
           {/* decorative detail */}
@@ -61,15 +61,18 @@ export function SystemicTherapy() {
             <span className="h-px w-9 bg-gold/70" />
           </div>
 
-          <p
-            className="mt-7 max-w-[30rem] text-[1rem] leading-[1.75] text-taupe"
-            style={revealStyle(shown, 200)}
-          >
-            A Terapia Familiar Sistêmica considera que cada pessoa faz parte de diferentes
-            contextos e relações. Esse olhar busca compreender como histórias, vínculos, padrões
-            de interação e comunicação se conectam e influenciam as experiências individuais e
-            familiares.
-          </p>
+          <div className="mt-7 max-w-[30rem] space-y-4" style={revealStyle(shown, 200)}>
+            <p className="text-[1rem] leading-[1.75] text-taupe">
+              Nenhuma pessoa existe de forma isolada. Somos atravessados por nossa história, pelas
+              relações que construímos, pelos contextos em que vivemos e também pelas gerações que
+              vieram antes de nós.
+            </p>
+            <p className="text-[1rem] leading-[1.75] text-taupe">
+              Na Terapia Familiar Sistêmica, o olhar vai além da dificuldade apresentada. Buscamos
+              compreender como diferentes aspectos da vida se conectam e influenciam a maneira de
+              sentir, agir e se posicionar no mundo.
+            </p>
+          </div>
         </div>
 
         {/* Right — 2x2 grid */}

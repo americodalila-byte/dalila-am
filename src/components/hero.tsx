@@ -43,18 +43,26 @@ export function Hero() {
               lineHeight: 1.01,
             }}
           >
-            Relações mais saudáveis transformam vidas e histórias.
+            Algumas histórias se repetem até que consigamos compreendê-las.
           </h1>
 
           <div className="rise mt-[20px] h-px w-16 bg-gold" style={{ animationDelay: "260ms" }} aria-hidden="true" />
 
           <p
-            className="rise mt-[22px] max-w-[27rem] text-[1.0625rem] leading-[1.7] text-taupe"
+            className="rise mt-[22px] max-w-[30rem] text-[1.0625rem] leading-[1.7] text-taupe"
             style={{ animationDelay: "320ms" }}
           >
-            A psicoterapia é um espaço de acolhimento, escuta e compreensão para que você possa
-            se conhecer melhor, fortalecer vínculos e construir relações mais conscientes e
-            saudáveis.
+            Na terapia, olhamos para você, sua história e suas relações para compreender padrões
+            que se repetem, conflitos que machucam e vínculos que precisam encontrar novas formas
+            de existir.
+          </p>
+          <p
+            className="rise mt-4 max-w-[30rem] text-[1.0625rem] leading-[1.7] text-taupe"
+            style={{ animationDelay: "380ms" }}
+          >
+            Com um olhar sistêmico e acolhedor, acompanho indivíduos, casais e famílias na
+            compreensão de suas histórias, no fortalecimento de seus vínculos e na construção de
+            relações mais conscientes e saudáveis.
           </p>
 
           <div
