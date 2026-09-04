@@ -1,5 +1,6 @@
-import { CalendarDays, User, Sprout } from "lucide-react";
+import { CalendarDays, User, Sprout, ArrowRight } from "lucide-react";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
