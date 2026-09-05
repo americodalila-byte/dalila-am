@@ -1,6 +1,6 @@
 import { ArrowRight, User, HeartHandshake, Home, MapPin } from "lucide-react";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
-import { WHATSAPP_URL } from "@/lib/contact";
+import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
 
 const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=R.+Bernardo+Cupertino,+704+-+Martins,+Uberl%C3%A2ndia+-+MG,+38400-444";
@@ -31,7 +31,7 @@ export function Modalities() {
 
   return (
     <section
-      id="modalidades"
+      id="atendimento"
       ref={ref}
       className="px-5 py-12 sm:px-8 lg:py-16"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 55%, var(--color-offwhite))" }}
@@ -64,7 +64,7 @@ export function Modalities() {
                 </p>
                 <p className="mt-3 text-[0.9rem] leading-[1.7] text-taupe">{text}</p>
                 <a
-                  href={WHATSAPP_URL}
+                  href={whatsappLink(waMessage)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-5 inline-flex items-center gap-2 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-gold transition-colors duration-300 hover:text-wood focus-visible:outline-gold"

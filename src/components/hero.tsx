@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import dalila from "@/assets/dalila.png.asset.json";
-import { WHATSAPP_URL } from "@/lib/contact";
+import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -17,7 +17,7 @@ function WhatsappIcon({ className }: { className?: string }) {
 export function Hero() {
   return (
     <section
-      id="top"
+      id="inicio"
       className="relative flex flex-col overflow-hidden bg-offwhite lg:min-h-[calc(100svh-210px)]"
     >
       <div
@@ -70,14 +70,16 @@ export function Hero() {
             style={{ animationDelay: "420ms" }}
           >
             <a
-              href="#agendar"
+              href={whatsappLink(WA_MESSAGES.agendar)}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex h-[54px] w-full items-center justify-center gap-3 whitespace-nowrap rounded-[18px] bg-graphite px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 sm:w-[245px]"
             >
               Agendar consulta
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <a
-              href={WHATSAPP_URL}
+              href={whatsappLink(WA_MESSAGES.duvidas)}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-[54px] w-full items-center justify-center gap-3 whitespace-nowrap rounded-[18px] border border-gold/60 px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-ivory/60 sm:w-[310px]"
