@@ -48,7 +48,7 @@ export function Areas() {
       <div className="mx-auto max-w-[1440px]">
         <div className="text-center" style={revealStyle(shown)}>
           <BotanicalMark />
-          <h2 className="mt-5 font-serif text-[1.85rem] font-light uppercase leading-[1.18] tracking-[0.02em] text-graphite sm:text-[2.2rem] lg:text-[2.45rem]">
+          <h2 className="balanced-title mt-5 font-serif text-[1.7rem] font-light uppercase leading-[1.2] tracking-normal text-graphite sm:text-[2rem] lg:text-[2.35rem]">
             O que podemos trabalhar
             <br className="hidden sm:block" /> na terapia?
           </h2>
