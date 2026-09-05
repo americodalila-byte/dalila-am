@@ -8,18 +8,21 @@ const MAPS_URL =
 const cards = [
   {
     Icon: User,
+    waMessage: WA_MESSAGES.individual,
     title: "Atendimento Individual",
     highlight: "Um olhar para você sem desconsiderar a sua história.",
     text: "Um espaço para compreender como experiências, vínculos e contextos atravessam quem você é e a forma como vive hoje.",
   },
   {
     Icon: HeartHandshake,
+    waMessage: WA_MESSAGES.casal,
     title: "Terapia de Casal",
     highlight: "Um olhar para a relação, não para encontrar culpados.",
     text: "Um espaço para compreender a dinâmica construída a dois e favorecer novas formas de diálogo, conexão e convivência.",
   },
   {
     Icon: Home,
+    waMessage: WA_MESSAGES.familiar,
     title: "Terapia Familiar",
     highlight: "Quando o que acontece com um também atravessa a família.",
     text: "Um espaço para olhar para as relações familiares, reorganizar dinâmicas e favorecer movimentos mais saudáveis entre seus membros.",
@@ -45,7 +48,7 @@ export function Modalities() {
         </div>
 
         <div className="mt-9 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {cards.map(({ Icon, title, text, highlight }, i) => (
+          {cards.map(({ Icon, title, text, highlight, waMessage }, i) => (
             <article
               key={title}
               style={revealStyle(shown, 200 + i * 110)}
