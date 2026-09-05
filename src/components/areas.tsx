@@ -40,7 +40,7 @@ export function Areas() {
 
   return (
     <section
-      id="areas"
+      id="atuacao"
       ref={ref}
       className="px-5 pt-9 pb-12 sm:px-8 lg:pt-10 lg:pb-16"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 62%, var(--color-offwhite))" }}

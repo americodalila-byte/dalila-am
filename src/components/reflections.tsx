@@ -89,14 +89,12 @@ export function Reflections() {
                 <h3 className="mt-3 font-serif text-[1.28rem] font-light leading-[1.3] text-graphite">
                   {title}
                 </h3>
-                <a
-                  href={INSTAGRAM_URL ?? "#reflexoes"}
-                  {...(INSTAGRAM_URL ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                  className="mt-auto inline-flex items-center gap-2 pt-5 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-taupe transition-colors duration-300 hover:text-gold focus-visible:outline-gold"
+                <span
+                  className="mt-auto inline-flex items-center gap-2 pt-5 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-taupe"
                 >
                   Ler reflexão
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
-                </a>
+                </span>
               </div>
             </article>
           ))}

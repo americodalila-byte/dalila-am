@@ -1,6 +1,6 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
 import logo from "@/assets/logo-dalila.png.asset.json";
-import { WHATSAPP_URL, INSTAGRAM_URL, INSTAGRAM_HANDLE, EMAIL } from "@/lib/contact";
+import { whatsappLink, WA_MESSAGES, INSTAGRAM_URL, INSTAGRAM_HANDLE, EMAIL } from "@/lib/contact";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -23,8 +23,8 @@ function WhatsappIcon({ className }: { className?: string }) {
 
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
-  { label: "Atuação", href: "#areas" },
-  { label: "Abordagem", href: "#terapia-sistemica" },
+  { label: "Atuação", href: "#atuacao" },
+  { label: "Abordagem", href: "#abordagem" },
   { label: "Atendimento", href: "#atendimento" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -69,7 +69,7 @@ export function SiteFooter() {
               </li>
             )}
             <li>
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className={linkClass}>
+              <a href={whatsappLink(WA_MESSAGES.footer)} target="_blank" rel="noopener noreferrer" className={linkClass}>
                 <WhatsappIcon className="h-4 w-4" />
                 WhatsApp
               </a>

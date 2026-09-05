@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
 import logo from "@/assets/logo-dalila.png.asset.json";
 
 const nav = [
   { label: "Sobre", href: "#sobre" },
-  { label: "Atuação", href: "#areas" },
-  { label: "Abordagem", href: "#terapia-sistemica" },
+  { label: "Atuação", href: "#atuacao" },
+  { label: "Abordagem", href: "#abordagem" },
   { label: "Atendimento", href: "#atendimento" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -29,7 +30,7 @@ export function SiteHeader() {
       }`}
     >
       <div className="mx-auto grid max-w-[1440px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3 sm:px-8 lg:grid-cols-[1fr_auto_1fr] lg:py-4">
-        <a href="#top" className="min-w-0 focus-visible:outline-gold" aria-label="Dalila Américo — início">
+        <a href="#inicio" className="min-w-0 focus-visible:outline-gold" aria-label="Dalila Américo — início">
           <img
             src={logo.url}
             alt="Dalila Américo"
@@ -57,7 +58,9 @@ export function SiteHeader() {
 
         <div className="flex justify-end">
           <a
-            href="#agendar"
+            href={whatsappLink(WA_MESSAGES.agendar)}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex h-11 shrink-0 items-center gap-3 rounded-[16px] bg-graphite px-5 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-gold sm:px-7 sm:text-[0.72rem]"
           >
             Agendar consulta

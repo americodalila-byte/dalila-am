@@ -29,7 +29,7 @@ export function SystemicTherapy() {
 
   return (
     <section
-      id="terapia-sistemica"
+      id="abordagem"
       ref={ref}
       className="px-5 py-12 sm:px-8 lg:py-16"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 30%, var(--color-offwhite))" }}

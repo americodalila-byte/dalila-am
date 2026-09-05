@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
-import { WHATSAPP_URL } from "@/lib/contact";
+import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -45,7 +45,7 @@ export function FinalCta() {
 
   return (
     <section
-      id="agendar"
+      id="contato"
       ref={ref}
       className="relative overflow-hidden border-t border-fendi/25 px-5 py-11 sm:px-8 lg:py-12"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 55%, var(--color-offwhite))" }}
@@ -71,7 +71,7 @@ export function FinalCta() {
           style={revealStyle(shown, 240)}
         >
           <a
-            href={WHATSAPP_URL}
+            href={whatsappLink(WA_MESSAGES.agendar)}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-3 whitespace-nowrap h-[52px] rounded-[16px] bg-graphite px-7 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90"
@@ -80,7 +80,7 @@ export function FinalCta() {
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </a>
           <a
-            href={WHATSAPP_URL}
+            href={whatsappLink(WA_MESSAGES.processo)}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 whitespace-nowrap h-[52px] rounded-[16px] border border-graphite/25 px-7 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:text-gold"

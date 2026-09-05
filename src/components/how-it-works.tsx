@@ -1,6 +1,6 @@
 import { CalendarDays, User, Sprout, ArrowRight } from "lucide-react";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
-import { WHATSAPP_URL } from "@/lib/contact";
+import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -45,7 +45,7 @@ export function HowItWorks() {
   const { ref, shown } = useReveal<HTMLElement>();
 
   return (
-    <section id="atendimento" ref={ref} className="bg-offwhite px-5 py-12 sm:px-8 lg:py-16">
+    <section id="como-funciona" ref={ref} className="bg-offwhite px-5 py-12 sm:px-8 lg:py-16">
       <div className="mx-auto max-w-[1440px]">
         <div style={revealStyle(shown)}>
           <h2 className="balanced-title font-serif text-[1.7rem] font-light uppercase leading-[1.2] tracking-normal text-graphite sm:text-[2rem] lg:text-[2.35rem]">
@@ -92,7 +92,7 @@ export function HowItWorks() {
 
         <div className="mt-11 flex justify-center" style={revealStyle(shown, 720)}>
           <a
-            href={WHATSAPP_URL}
+            href={whatsappLink(WA_MESSAGES.primeiroAtendimento)}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex h-[54px] items-center justify-center gap-3 whitespace-nowrap rounded-[18px] bg-graphite px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90"
