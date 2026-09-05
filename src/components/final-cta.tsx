@@ -55,7 +55,7 @@ export function FinalCta() {
 
       <div className="relative mx-auto max-w-[46rem] text-center" style={revealStyle(shown)}>
         <div className="mx-auto h-px w-12 bg-gold" aria-hidden="true" />
-        <h2 className="mx-auto mt-5 max-w-[32rem] font-serif text-[1.72rem] font-light leading-[1.2] text-graphite sm:text-[2.2rem] lg:text-[2.65rem]">
+        <h2 className="balanced-title mx-auto mt-5 max-w-[32rem] font-serif text-[1.55rem] font-light leading-[1.25] text-graphite sm:text-[2rem] lg:text-[2.4rem]">
           Cuidar das suas relações também pode começar por compreender a sua própria história.
         </h2>
         <p

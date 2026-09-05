@@ -41,7 +41,7 @@ export function Commitment() {
     <section id="compromisso" ref={ref} className="bg-offwhite px-5 pt-11 pb-12 sm:px-8 lg:pt-12 lg:pb-16">
       <div className="mx-auto max-w-[1440px]">
         <div style={revealStyle(shown)}>
-          <h2 className="font-serif text-[1.9rem] font-light uppercase tracking-[0.05em] text-graphite sm:text-[2.3rem] lg:text-[2.7rem]">
+          <h2 className="balanced-title font-serif text-[1.7rem] font-light uppercase leading-[1.2] tracking-normal text-graphite sm:text-[2rem] lg:text-[2.35rem]">
             Compromisso profissional
           </h2>
           <div className="mt-5 h-px w-14 bg-gold" aria-hidden="true" />

@@ -32,6 +32,13 @@
   animation: rise 1s cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
 
+@utility balanced-title {
+  text-wrap: balance;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
 html {
   scroll-behavior: smooth;
 }

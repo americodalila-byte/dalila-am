@@ -35,7 +35,7 @@ export function Reflections() {
     >
       <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] lg:gap-14">
         <div style={revealStyle(shown)}>
-          <h2 className="font-serif text-[1.95rem] font-light uppercase leading-[1.12] tracking-[0.05em] text-graphite sm:text-[2.25rem] lg:text-[1.95rem] xl:text-[2.25rem]">
+          <h2 className="balanced-title font-serif text-[1.7rem] font-light uppercase leading-[1.2] tracking-normal text-graphite sm:text-[2rem] lg:text-[2.35rem]">
             Reflexões sobre
             <br className="hidden lg:block" /> relacionamentos
           </h2>

@@ -36,11 +36,11 @@ export function Hero() {
           </p>
 
           <h1
-            className="rise mt-[28px] max-w-[37.5rem] font-serif font-light tracking-[-0.01em] text-graphite"
+            className="rise balanced-title mt-[28px] max-w-[37.5rem] font-serif font-light tracking-normal text-graphite"
             style={{
               animationDelay: "160ms",
-              fontSize: "clamp(2.2rem, 4.2vw, 3.95rem)",
-              lineHeight: 1.01,
+              fontSize: "clamp(1.98rem, 3.8vw, 3.55rem)",
+              lineHeight: 1.08,
             }}
           >
             Algumas histórias se repetem até que consigamos compreendê-las.

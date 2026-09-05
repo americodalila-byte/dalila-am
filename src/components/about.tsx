@@ -33,7 +33,7 @@ export function About() {
               Sobre mim
             </p>
 
-            <h2 className="mt-5 font-serif text-[2.3rem] font-light leading-[1.05] text-graphite sm:text-[2.8rem] lg:text-[3rem]">
+            <h2 className="balanced-title mt-5 font-serif text-[2.05rem] font-light leading-[1.1] text-graphite sm:text-[2.5rem] lg:text-[2.7rem]">
               Dalila Américo
             </h2>
 

@@ -44,7 +44,7 @@ export function SystemicTherapy() {
           <div className="mt-4 h-px w-10 bg-gold/70" aria-hidden="true" />
 
           <h2
-            className="mt-6 font-serif text-[2.1rem] font-light leading-[1.08] text-graphite sm:text-[2.6rem] lg:text-[3.1rem]"
+            className="balanced-title mt-6 font-serif text-[1.9rem] font-light leading-[1.12] text-graphite sm:text-[2.35rem] lg:text-[2.75rem]"
             style={revealStyle(shown, 120)}
           >
             Compreender o todo
