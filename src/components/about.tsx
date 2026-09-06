@@ -10,8 +10,8 @@ export function About() {
   const { ref, shown } = useReveal<HTMLElement>();
 
   return (
-    <section id="sobre" ref={ref} className="overflow-hidden bg-offwhite px-5 py-12 sm:px-8 lg:py-16">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-9 lg:grid-cols-[35fr_65fr] lg:items-start lg:gap-14">
+    <section id="sobre" ref={ref} className="overflow-hidden bg-offwhite px-4 py-11 sm:px-8 sm:py-12 lg:py-16">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-8 sm:gap-9 lg:grid-cols-[35fr_65fr] lg:items-start lg:gap-14">
         <div
           className="relative mx-auto w-full max-w-[20rem] overflow-hidden rounded-[18px] lg:mx-0 lg:max-w-none"
           style={revealStyle(shown)}
@@ -22,7 +22,7 @@ export function About() {
             width={768}
             height={1344}
             loading="lazy"
-            className="h-[22rem] w-full object-cover object-top sm:h-[26rem] lg:h-[34rem]"
+            className="aspect-[4/5] h-auto w-full object-cover object-top sm:h-[26rem] sm:aspect-auto lg:h-[34rem]"
           />
         </div>
 
@@ -33,11 +33,11 @@ export function About() {
               Sobre mim
             </p>
 
-            <h2 className="balanced-title mt-5 font-serif text-[2.05rem] font-light leading-[1.1] text-graphite sm:text-[2.5rem] lg:text-[2.7rem]">
+            <h2 className="balanced-title mt-4 font-serif text-[1.85rem] font-light leading-[1.12] text-graphite sm:mt-5 sm:text-[2.5rem] lg:text-[2.7rem]">
               Dalila Américo
             </h2>
 
-            <p className="mt-2 text-[0.68rem] font-medium uppercase tracking-[0.24em] text-gold">
+            <p className="mt-2 max-w-[19rem] text-[0.65rem] font-medium uppercase leading-[1.55] tracking-[0.18em] text-gold sm:max-w-none sm:text-[0.68rem] sm:leading-normal sm:tracking-[0.24em]">
               Psicóloga | Terapeuta Familiar Sistêmica • CRP 04/48200
             </p>
 
@@ -45,20 +45,20 @@ export function About() {
           </div>
 
           {/* Bloco 2 — Apresentação */}
-          <div className="mt-7 max-w-[31rem] space-y-4" style={revealStyle(shown, 260)}>
-            <p className="text-[1.0625rem] leading-[1.75] text-graphite">
+          <div className="mt-6 max-w-[31rem] space-y-3.5 sm:mt-7 sm:space-y-4" style={revealStyle(shown, 260)}>
+            <p className="text-[0.98rem] leading-[1.75] text-graphite sm:text-[1.0625rem]">
               Acredito que nenhuma história começa apenas no momento presente.
             </p>
-            <p className="text-[1.0625rem] leading-[1.75] text-taupe">
+            <p className="text-[0.98rem] leading-[1.75] text-taupe sm:text-[1.0625rem]">
               Somos construídos também nas relações que vivemos, nos vínculos que estabelecemos e
               nos diferentes contextos que atravessam nossa história.
             </p>
-            <p className="text-[1.0625rem] leading-[1.75] text-taupe">
+            <p className="text-[0.98rem] leading-[1.75] text-taupe sm:text-[1.0625rem]">
               Por isso, meu olhar terapêutico é também relacional: busco compreender não apenas o
               que você está vivendo, mas como suas experiências, vínculos e contexto se conectam ao
               momento atual.
             </p>
-            <p className="text-[1.0625rem] leading-[1.75] text-taupe">
+            <p className="text-[0.98rem] leading-[1.75] text-taupe sm:text-[1.0625rem]">
               Meu compromisso é oferecer uma escuta cuidadosa e respeitosa, ajudando cada pessoa,
               casal ou família a ampliar sua compreensão e construir novas possibilidades.
             </p>

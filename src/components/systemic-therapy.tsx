@@ -31,10 +31,10 @@ export function SystemicTherapy() {
     <section
       id="abordagem"
       ref={ref}
-      className="px-5 py-12 sm:px-8 lg:py-16"
+      className="px-4 py-11 sm:px-8 sm:py-12 lg:py-16"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 30%, var(--color-offwhite))" }}
     >
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-11 lg:grid-cols-[48fr_52fr] lg:gap-14">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-9 sm:gap-11 lg:grid-cols-[48fr_52fr] lg:gap-14">
         {/* Left */}
         <div style={revealStyle(shown)}>
           <p className="text-[0.7rem] font-medium uppercase tracking-[0.3em] text-gold">
@@ -44,7 +44,7 @@ export function SystemicTherapy() {
           <div className="mt-4 h-px w-10 bg-gold/70" aria-hidden="true" />
 
           <h2
-            className="balanced-title mt-6 font-serif text-[1.9rem] font-light leading-[1.12] text-graphite sm:text-[2.35rem] lg:text-[2.75rem]"
+            className="balanced-title mt-5 font-serif text-[1.68rem] font-light leading-[1.15] text-graphite sm:mt-6 sm:text-[2.35rem] sm:leading-[1.12] lg:text-[2.75rem]"
             style={revealStyle(shown, 120)}
           >
             Compreender o todo
@@ -61,13 +61,13 @@ export function SystemicTherapy() {
             <span className="h-px w-9 bg-gold/70" />
           </div>
 
-          <div className="mt-7 max-w-[30rem] space-y-4" style={revealStyle(shown, 200)}>
-            <p className="text-[1rem] leading-[1.75] text-taupe">
+          <div className="mt-6 max-w-[30rem] space-y-3.5 sm:mt-7 sm:space-y-4" style={revealStyle(shown, 200)}>
+            <p className="text-[0.95rem] leading-[1.75] text-taupe sm:text-[1rem]">
               Nenhuma pessoa existe de forma isolada. Somos atravessados por nossa história, pelas
               relações que construímos, pelos contextos em que vivemos e também pelas gerações que
               vieram antes de nós.
             </p>
-            <p className="text-[1rem] leading-[1.75] text-taupe">
+            <p className="text-[0.95rem] leading-[1.75] text-taupe sm:text-[1rem]">
               Na Terapia Familiar Sistêmica, o olhar vai além da dificuldade apresentada. Buscamos
               compreender como diferentes aspectos da vida se conectam e influenciam a maneira de
               sentir, agir e se posicionar no mundo.
@@ -81,7 +81,7 @@ export function SystemicTherapy() {
             <article
               key={title}
               style={revealStyle(shown, 240 + i * 90)}
-              className="group grid h-full grid-rows-[auto_auto_auto_1fr] rounded-[20px] border border-fendi/35 bg-offwhite/70 p-5 transition-all duration-300 hover:-translate-y-[2px] hover:border-fendi/60 sm:p-6"
+               className="group grid h-full grid-rows-[auto_auto_auto_1fr] rounded-[16px] border border-fendi/35 bg-offwhite/70 p-5 transition-all duration-300 hover:-translate-y-[2px] hover:border-fendi/60 sm:rounded-[20px] sm:p-6"
             >
               <Icon
                 className="h-6 w-6 text-gold transition-colors duration-300 group-hover:text-wood"

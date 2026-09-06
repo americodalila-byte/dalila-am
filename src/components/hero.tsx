@@ -29,27 +29,25 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex w-full max-w-[1440px] flex-1 grid-cols-1 flex-col items-start gap-8 px-5 pb-8 pt-24 sm:px-8 lg:grid lg:grid-cols-[60fr_40fr] lg:gap-10 lg:pb-0 lg:pt-[104px]">
+      <div className="relative mx-auto flex w-full max-w-[1440px] flex-1 grid-cols-1 flex-col items-start gap-7 px-4 pb-7 pt-[5.75rem] sm:gap-8 sm:px-8 sm:pb-8 sm:pt-24 lg:grid lg:grid-cols-[60fr_40fr] lg:gap-10 lg:pb-0 lg:pt-[104px]">
         <div className="flex max-w-[46rem] flex-col justify-start lg:pb-6">
-          <p className="rise text-[0.7rem] font-medium uppercase tracking-[0.32em] text-gold" style={{ animationDelay: "60ms" }}>
+          <p className="rise text-[0.66rem] font-medium uppercase tracking-[0.25em] text-gold sm:text-[0.7rem] sm:tracking-[0.32em]" style={{ animationDelay: "60ms" }}>
             Psicóloga • CRP 04/48200
           </p>
 
           <h1
-            className="rise balanced-title mt-[28px] max-w-[37.5rem] font-serif font-light tracking-normal text-graphite"
+            className="rise balanced-title mt-5 max-w-[37.5rem] font-serif text-[1.8rem] font-light leading-[1.12] tracking-normal text-graphite sm:mt-[28px] sm:text-[2.35rem] lg:text-[3.55rem] lg:leading-[1.08]"
             style={{
               animationDelay: "160ms",
-              fontSize: "clamp(1.98rem, 3.8vw, 3.55rem)",
-              lineHeight: 1.08,
             }}
           >
             Algumas histórias se repetem até que consigamos compreendê-las.
           </h1>
 
-          <div className="rise mt-[20px] h-px w-16 bg-gold" style={{ animationDelay: "260ms" }} aria-hidden="true" />
+          <div className="rise mt-[18px] h-px w-14 bg-gold sm:mt-[20px] sm:w-16" style={{ animationDelay: "260ms" }} aria-hidden="true" />
 
           <p
-            className="rise mt-[22px] max-w-[30rem] text-[1.0625rem] leading-[1.7] text-taupe"
+            className="rise mt-5 max-w-[30rem] text-[0.97rem] leading-[1.75] text-taupe sm:mt-[22px] sm:text-[1.0625rem] sm:leading-[1.7]"
             style={{ animationDelay: "320ms" }}
           >
             Na terapia, olhamos para você, sua história e suas relações para compreender padrões
@@ -57,7 +55,7 @@ export function Hero() {
             de existir.
           </p>
           <p
-            className="rise mt-4 max-w-[30rem] text-[1.0625rem] leading-[1.7] text-taupe"
+            className="rise mt-3.5 max-w-[30rem] text-[0.97rem] leading-[1.75] text-taupe sm:mt-4 sm:text-[1.0625rem] sm:leading-[1.7]"
             style={{ animationDelay: "380ms" }}
           >
             Com um olhar sistêmico e acolhedor, acompanho indivíduos, casais e famílias na
@@ -66,14 +64,14 @@ export function Hero() {
           </p>
 
           <div
-            className="rise mt-[32px] flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4"
+            className="rise mt-7 flex w-full flex-col gap-3 sm:mt-[32px] sm:w-auto sm:flex-row sm:items-center sm:gap-4"
             style={{ animationDelay: "420ms" }}
           >
             <a
               href={whatsappLink(WA_MESSAGES.agendar)}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex h-[54px] w-full items-center justify-center gap-3 whitespace-nowrap rounded-[18px] bg-graphite px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 sm:w-[245px]"
+              className="group inline-flex h-[52px] w-full items-center justify-center gap-3 whitespace-nowrap rounded-[16px] bg-graphite px-5 text-[0.68rem] font-medium uppercase tracking-[0.11em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-gold sm:h-[54px] sm:w-[245px] sm:rounded-[18px] sm:px-8 sm:text-[0.7rem] sm:tracking-[0.14em]"
             >
               Agendar consulta
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -82,7 +80,7 @@ export function Hero() {
               href={whatsappLink(WA_MESSAGES.duvidas)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-[54px] w-full items-center justify-center gap-3 whitespace-nowrap rounded-[18px] border border-gold/60 px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-ivory/60 sm:w-[310px]"
+              className="inline-flex h-[52px] w-full items-center justify-center gap-2.5 whitespace-nowrap rounded-[16px] border border-gold/60 px-5 text-[0.68rem] font-medium uppercase tracking-[0.1em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-ivory/60 focus-visible:outline-gold sm:h-[54px] sm:w-[310px] sm:gap-3 sm:rounded-[18px] sm:px-8 sm:text-[0.7rem] sm:tracking-[0.14em]"
             >
               <WhatsappIcon className="h-5 w-5 text-gold" />
               Conversar pelo WhatsApp
@@ -91,9 +89,9 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="rise relative flex w-full justify-center lg:-mt-1 lg:justify-end" style={{ animationDelay: "220ms" }}>
+        <div className="rise relative flex w-full justify-center pt-1 sm:pt-0 lg:-mt-1 lg:justify-end" style={{ animationDelay: "220ms" }}>
           <div
-            className="relative aspect-[4/5] w-full max-w-none overflow-hidden rounded-[18px] border border-fendi/[0.06] bg-ivory shadow-[0_18px_50px_rgba(47,49,50,0.06)] sm:max-w-[23rem] lg:mb-16 lg:w-[86%] lg:max-w-[28rem] lg:rounded-[22px]"
+            className="relative aspect-[4/5] w-full max-w-[22rem] overflow-hidden rounded-[18px] border border-fendi/[0.06] bg-ivory shadow-[0_18px_50px_rgba(47,49,50,0.06)] sm:max-w-[23rem] lg:mb-16 lg:w-[86%] lg:max-w-[28rem] lg:rounded-[22px]"
           >
             <img
               src={dalila.url}

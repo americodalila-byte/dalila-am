@@ -41,11 +41,24 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: clip;
 }
 
 section[id],
 [id] {
   scroll-margin-top: 104px;
+}
+
+@media (max-width: 639px) {
+  section[id],
+  [id] {
+    scroll-margin-top: 76px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
