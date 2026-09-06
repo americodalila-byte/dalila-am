@@ -1,6 +1,7 @@
 import { ArrowRight, User, HeartHandshake, Home, MapPin } from "lucide-react";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
 import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
+import { trackEvent } from "@/lib/analytics";
 
 const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=R.+Bernardo+Cupertino,+704+-+Martins,+Uberl%C3%A2ndia+-+MG,+38400-444";
@@ -68,6 +69,7 @@ export function Modalities() {
                 <p className="mt-3 text-[0.9rem] leading-[1.7] text-taupe">{text}</p>
                 <a
                   href={whatsappLink(waMessage)}
+                  onClick={() => trackEvent("click_agendar_sessao", { location: "modalidades" })}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-5 inline-flex min-h-11 items-center gap-2 self-start text-[0.68rem] font-medium uppercase tracking-[0.12em] text-gold transition-colors duration-300 hover:text-wood focus-visible:outline-gold sm:min-h-0 sm:tracking-[0.16em]"
@@ -88,6 +90,7 @@ export function Modalities() {
           <span>Atendimento presencial em Uberlândia/MG e on-line.</span>
           <a
             href={MAPS_URL}
+            onClick={() => trackEvent("click_localizacao", { location: "modalidades" })}
             target="_blank"
             rel="noopener noreferrer"
             className="col-start-2 mt-1 inline-flex min-h-11 items-center text-[0.88rem] text-gold underline-offset-4 transition-colors duration-300 hover:text-wood hover:underline sm:col-start-auto sm:mt-0 sm:min-h-0 sm:text-[0.9rem]"

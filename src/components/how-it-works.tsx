@@ -1,6 +1,7 @@
 import { CalendarDays, User, Sprout, ArrowRight } from "lucide-react";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
 import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
+import { trackEvent } from "@/lib/analytics";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -93,6 +94,7 @@ export function HowItWorks() {
         <div className="mt-9 flex justify-center sm:mt-11" style={revealStyle(shown, 720)}>
           <a
             href={whatsappLink(WA_MESSAGES.primeiroAtendimento)}
+            onClick={() => trackEvent("click_agendar_primeiro_atendimento", { location: "como_funciona" })}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex h-[52px] w-full items-center justify-center gap-2.5 whitespace-nowrap rounded-[16px] bg-graphite px-4 text-[0.68rem] font-medium uppercase tracking-[0.09em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-gold sm:h-[54px] sm:w-auto sm:gap-3 sm:rounded-[18px] sm:px-8 sm:text-[0.7rem] sm:tracking-[0.14em]"

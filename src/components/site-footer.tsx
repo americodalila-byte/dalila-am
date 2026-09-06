@@ -1,6 +1,10 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
 import logo from "@/assets/logo-dalila.png.asset.json";
 import { whatsappLink, WA_MESSAGES, INSTAGRAM_URL, INSTAGRAM_HANDLE, EMAIL } from "@/lib/contact";
+import { trackEvent } from "@/lib/analytics";
+
+const MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=R.+Bernardo+Cupertino,+704+-+Martins,+Uberl%C3%A2ndia+-+MG,+38400-444";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -62,14 +66,14 @@ export function SiteFooter() {
           <ul className="mt-3.5 space-y-1 sm:space-y-2">
             {INSTAGRAM_URL && (
               <li>
-                <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className={`${linkClass} min-h-10 sm:min-h-0`}>
+                <a href={INSTAGRAM_URL} onClick={() => trackEvent("click_instagram", { location: "footer" })} target="_blank" rel="noopener noreferrer" className={`${linkClass} min-h-10 sm:min-h-0`}>
                   <Instagram className="h-4 w-4" strokeWidth={1.2} />
                   {INSTAGRAM_HANDLE ?? "Instagram"}
                 </a>
               </li>
             )}
             <li>
-              <a href={whatsappLink(WA_MESSAGES.footer)} target="_blank" rel="noopener noreferrer" className={`${linkClass} min-h-10 sm:min-h-0`}>
+              <a href={whatsappLink(WA_MESSAGES.footer)} onClick={() => trackEvent("click_whatsapp", { location: "footer" })} target="_blank" rel="noopener noreferrer" className={`${linkClass} min-h-10 sm:min-h-0`}>
                 <WhatsappIcon className="h-4 w-4" />
                 WhatsApp
               </a>
@@ -90,14 +94,20 @@ export function SiteFooter() {
 
         <div>
           <p className={headingClass}>Localização</p>
-          <p className="mt-3.5 flex gap-2.5 text-[0.85rem] leading-[1.65] text-taupe">
+          <a
+            href={MAPS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackEvent("click_localizacao", { location: "footer" })}
+            className="mt-3.5 flex gap-2.5 text-[0.85rem] leading-[1.65] text-taupe transition-colors duration-[250ms] hover:text-gold focus-visible:outline-gold"
+          >
             <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={1.2} />
             <span>
               R. Bernardo Cupertino, 704
               <br />
               Martins, Uberlândia - MG
             </span>
-          </p>
+          </a>
         </div>
       </div>
 

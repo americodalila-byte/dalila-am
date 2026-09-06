@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
+import { trackEvent } from "@/lib/analytics";
 import logo from "@/assets/logo-dalila.png.asset.json";
 
 const nav = [
@@ -59,6 +60,7 @@ export function SiteHeader() {
         <div className="flex justify-end">
           <a
             href={whatsappLink(WA_MESSAGES.agendar)}
+            onClick={() => trackEvent("click_agendar_consulta", { location: "header" })}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex h-11 shrink-0 items-center gap-2 rounded-[14px] bg-graphite px-4 text-[0.64rem] font-medium uppercase tracking-[0.11em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-gold sm:gap-3 sm:rounded-[16px] sm:px-7 sm:text-[0.72rem] sm:tracking-[0.16em]"

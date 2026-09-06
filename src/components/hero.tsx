@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import dalila from "@/assets/dalila.png.asset.json";
 import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
+import { trackEvent } from "@/lib/analytics";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -69,6 +70,7 @@ export function Hero() {
           >
             <a
               href={whatsappLink(WA_MESSAGES.agendar)}
+              onClick={() => trackEvent("click_agendar_consulta", { location: "hero" })}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex h-[52px] w-full items-center justify-center gap-3 whitespace-nowrap rounded-[16px] bg-graphite px-5 text-[0.68rem] font-medium uppercase tracking-[0.11em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-gold sm:h-[54px] sm:w-[245px] sm:rounded-[18px] sm:px-8 sm:text-[0.7rem] sm:tracking-[0.14em]"
@@ -78,6 +80,7 @@ export function Hero() {
             </a>
             <a
               href={whatsappLink(WA_MESSAGES.duvidas)}
+              onClick={() => trackEvent("click_whatsapp", { location: "hero" })}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-[52px] w-full items-center justify-center gap-2.5 whitespace-nowrap rounded-[16px] border border-gold/60 px-5 text-[0.68rem] font-medium uppercase tracking-[0.1em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-ivory/60 focus-visible:outline-gold sm:h-[54px] sm:w-[310px] sm:gap-3 sm:rounded-[18px] sm:px-8 sm:text-[0.7rem] sm:tracking-[0.14em]"
