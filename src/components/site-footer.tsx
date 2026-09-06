@@ -38,18 +38,18 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gold/50 bg-offwhite px-5 py-8 sm:px-8 lg:py-9">
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_1.2fr_1.2fr] lg:items-start lg:gap-12">
+    <footer className="border-t border-gold/50 bg-offwhite px-4 py-9 sm:px-8 sm:py-8 lg:py-9">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-9 sm:grid-cols-2 sm:gap-7 lg:grid-cols-[1fr_1fr_1.2fr_1.2fr] lg:items-start lg:gap-12">
         <div>
-          <img src={logo.url} alt="Dalila Américo" width={200} height={68} loading="lazy" className="h-11 w-auto" />
+          <img src={logo.url} alt="Dalila Américo" width={200} height={68} loading="lazy" className="h-10 w-auto sm:h-11" />
         </div>
 
         <nav aria-label="Navegação">
           <p className={headingClass}>Navegação</p>
-          <ul className="mt-3.5 space-y-2">
+          <ul className="mt-4 grid grid-cols-2 gap-x-8 gap-y-1 sm:mt-3.5 sm:block sm:space-y-2">
             {navLinks.map((item) => (
               <li key={item.label}>
-                <a href={item.href} className={linkClass}>
+                <a href={item.href} className={`${linkClass} min-h-10 sm:min-h-0`}>
                   {item.label}
                 </a>
               </li>
@@ -59,24 +59,24 @@ export function SiteFooter() {
 
         <nav aria-label="Contato">
           <p className={headingClass}>Contato</p>
-          <ul className="mt-3.5 space-y-2">
+          <ul className="mt-3.5 space-y-1 sm:space-y-2">
             {INSTAGRAM_URL && (
               <li>
-                <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className={`${linkClass} min-h-10 sm:min-h-0`}>
                   <Instagram className="h-4 w-4" strokeWidth={1.2} />
                   {INSTAGRAM_HANDLE ?? "Instagram"}
                 </a>
               </li>
             )}
             <li>
-              <a href={whatsappLink(WA_MESSAGES.footer)} target="_blank" rel="noopener noreferrer" className={linkClass}>
+              <a href={whatsappLink(WA_MESSAGES.footer)} target="_blank" rel="noopener noreferrer" className={`${linkClass} min-h-10 sm:min-h-0`}>
                 <WhatsappIcon className="h-4 w-4" />
                 WhatsApp
               </a>
             </li>
             {EMAIL && (
               <li>
-                <a href={`mailto:${EMAIL}`} className={linkClass}>
+                <a href={`mailto:${EMAIL}`} className={`${linkClass} min-h-10 sm:min-h-0`}>
                   <Mail className="h-4 w-4" strokeWidth={1.2} />
                   {EMAIL}
                 </a>
@@ -101,7 +101,7 @@ export function SiteFooter() {
         </div>
       </div>
 
-      <div className="mx-auto mt-6 flex max-w-[1440px] flex-col gap-2 border-t border-fendi/30 pt-4 text-[0.76rem] text-taupe sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto mt-9 flex max-w-[1440px] flex-col gap-2.5 border-t border-fendi/30 pt-5 text-[0.74rem] leading-[1.6] text-taupe sm:mt-6 sm:flex-row sm:items-center sm:justify-between sm:gap-2 sm:pt-4 sm:text-[0.76rem] sm:leading-normal">
         <p>© {year} Dalila Américo. Todos os direitos reservados.</p>
         <p>
           Desenvolvido por{" "}

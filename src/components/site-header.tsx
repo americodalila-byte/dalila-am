@@ -29,14 +29,14 @@ export function SiteHeader() {
           : "border-b border-transparent"
       }`}
     >
-      <div className="mx-auto grid max-w-[1440px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3 sm:px-8 lg:grid-cols-[1fr_auto_1fr] lg:py-4">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-[minmax(0,1fr)_auto] items-center gap-2.5 px-4 py-2.5 sm:gap-4 sm:px-8 sm:py-3 lg:grid-cols-[1fr_auto_1fr] lg:py-4">
         <a href="#inicio" className="min-w-0 focus-visible:outline-gold" aria-label="Dalila Américo — início">
           <img
             src={logo.url}
             alt="Dalila Américo"
             width={200}
             height={68}
-            className="h-10 w-auto lg:h-[46px]"
+            className="h-9 w-auto sm:h-10 lg:h-[46px]"
           />
         </a>
 
@@ -61,7 +61,7 @@ export function SiteHeader() {
             href={whatsappLink(WA_MESSAGES.agendar)}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex h-11 shrink-0 items-center gap-3 rounded-[16px] bg-graphite px-5 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-gold sm:px-7 sm:text-[0.72rem]"
+            className="group inline-flex h-11 shrink-0 items-center gap-2 rounded-[14px] bg-graphite px-4 text-[0.64rem] font-medium uppercase tracking-[0.11em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-gold sm:gap-3 sm:rounded-[16px] sm:px-7 sm:text-[0.72rem] sm:tracking-[0.16em]"
           >
             Agendar consulta
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

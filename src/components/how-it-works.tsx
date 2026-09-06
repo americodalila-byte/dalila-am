@@ -45,28 +45,28 @@ export function HowItWorks() {
   const { ref, shown } = useReveal<HTMLElement>();
 
   return (
-    <section id="como-funciona" ref={ref} className="bg-offwhite px-5 py-12 sm:px-8 lg:py-16">
+    <section id="como-funciona" ref={ref} className="bg-offwhite px-4 py-11 sm:px-8 sm:py-12 lg:py-16">
       <div className="mx-auto max-w-[1440px]">
         <div style={revealStyle(shown)}>
-          <h2 className="balanced-title font-serif text-[1.7rem] font-light uppercase leading-[1.2] tracking-normal text-graphite sm:text-[2rem] lg:text-[2.35rem]">
+          <h2 className="balanced-title font-serif text-[1.52rem] font-light uppercase leading-[1.22] tracking-normal text-graphite sm:text-[2rem] lg:text-[2.35rem]">
             Como funciona o atendimento
           </h2>
-          <div className="mt-5 h-px w-14 bg-gold" aria-hidden="true" />
+          <div className="mt-4 h-px w-12 bg-gold sm:mt-5 sm:w-14" aria-hidden="true" />
         </div>
 
-        <ol className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4 lg:gap-8">
+        <ol className="mt-8 grid grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 sm:gap-10 lg:mt-12 lg:grid-cols-4 lg:gap-8">
           {steps.map(({ n, Icon, title, text }, i) => (
             <li
               key={n}
-              className="relative grid grid-rows-[auto_auto_1fr_auto] justify-items-center text-center"
+              className="relative grid grid-cols-[4.25rem_minmax(0,1fr)] grid-rows-[auto_auto_auto] gap-x-4 rounded-lg border border-fendi/20 px-4 py-5 text-left sm:grid-cols-none sm:grid-rows-[auto_auto_1fr_auto] sm:justify-items-center sm:rounded-none sm:border-0 sm:px-0 sm:py-0 sm:text-center"
               style={revealStyle(shown, 200 + i * 120)}
             >
-              <div className="flex items-center gap-3">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/60 font-serif text-[1rem] text-gold">
+              <div className="row-span-3 flex flex-col items-center gap-2.5 sm:row-span-1 sm:flex-row sm:gap-3">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full border border-gold/60 font-serif text-[0.9rem] text-gold sm:h-11 sm:w-11 sm:text-[1rem]">
                   {n}
                 </span>
-                <span className="flex h-14 w-14 items-center justify-center rounded-full bg-ivory/60">
-                  <Icon className="h-6 w-6 text-taupe" strokeWidth={1.05} />
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-ivory/60 sm:h-14 sm:w-14">
+                  <Icon className="h-5 w-5 text-taupe sm:h-6 sm:w-6" strokeWidth={1.05} />
                 </span>
               </div>
 
@@ -81,21 +81,21 @@ export function HowItWorks() {
                 </span>
               )}
 
-              <h3 className="mt-6 flex min-h-[3.4rem] items-start justify-center font-serif text-[1.28rem] font-light leading-[1.2] text-graphite sm:text-[1.4rem]">
+              <h3 className="font-serif text-[1.2rem] font-light leading-[1.2] text-graphite sm:mt-6 sm:flex sm:min-h-[3.4rem] sm:items-start sm:justify-center sm:text-[1.4rem]">
                 {title}
               </h3>
-              <p className="mt-2 max-w-[17rem] text-[0.9rem] leading-[1.7] text-taupe">{text}</p>
-              <div className="mt-5 h-px w-10 bg-gold/70" aria-hidden="true" />
+              <p className="mt-2 text-[0.86rem] leading-[1.65] text-taupe sm:max-w-xs sm:text-[0.9rem] sm:leading-[1.7]">{text}</p>
+              <div className="mt-4 h-px w-9 bg-gold/70 sm:mt-5 sm:w-10" aria-hidden="true" />
             </li>
           ))}
         </ol>
 
-        <div className="mt-11 flex justify-center" style={revealStyle(shown, 720)}>
+        <div className="mt-9 flex justify-center sm:mt-11" style={revealStyle(shown, 720)}>
           <a
             href={whatsappLink(WA_MESSAGES.primeiroAtendimento)}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex h-[54px] items-center justify-center gap-3 whitespace-nowrap rounded-[18px] bg-graphite px-8 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90"
+            className="group inline-flex h-[52px] w-full items-center justify-center gap-2.5 whitespace-nowrap rounded-[16px] bg-graphite px-4 text-[0.68rem] font-medium uppercase tracking-[0.09em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-gold sm:h-[54px] sm:w-auto sm:gap-3 sm:rounded-[18px] sm:px-8 sm:text-[0.7rem] sm:tracking-[0.14em]"
           >
             Agendar primeiro atendimento
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

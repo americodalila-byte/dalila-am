@@ -36,30 +36,30 @@ export function Modalities() {
     <section
       id="atendimento"
       ref={ref}
-      className="px-5 py-12 sm:px-8 lg:py-16"
+      className="px-4 py-11 sm:px-8 sm:py-12 lg:py-16"
       style={{ backgroundColor: "color-mix(in oklab, var(--color-ivory) 55%, var(--color-offwhite))" }}
     >
       <div className="mx-auto max-w-[1440px]">
         <div style={revealStyle(shown)}>
-          <h2 className="balanced-title font-serif text-[1.7rem] font-light uppercase leading-[1.2] tracking-normal text-graphite sm:text-[2rem] lg:text-[2.35rem]">
+          <h2 className="balanced-title font-serif text-[1.52rem] font-light uppercase leading-[1.22] tracking-normal text-graphite sm:text-[2rem] lg:text-[2.35rem]">
             Como posso te acompanhar
           </h2>
-          <div className="mt-5 h-px w-14 bg-gold" aria-hidden="true" />
+          <div className="mt-4 h-px w-12 bg-gold sm:mt-5 sm:w-14" aria-hidden="true" />
         </div>
 
-        <div className="mt-9 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-9 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
           {cards.map(({ Icon, title, text, highlight, waMessage }, i) => (
             <article
               key={title}
               style={revealStyle(shown, 200 + i * 110)}
-              className="group flex h-full items-start gap-5 rounded-xl border border-fendi/35 bg-offwhite p-6 transition-all duration-300 hover:-translate-y-[2px] hover:border-fendi/60 hover:shadow-[0_14px_30px_-20px_rgba(47,49,50,0.25)]"
+              className="group flex h-full flex-col items-start gap-4 rounded-xl border border-fendi/35 bg-offwhite p-5 transition-all duration-300 hover:-translate-y-[2px] hover:border-fendi/60 hover:shadow-[0_14px_30px_-20px_rgba(47,49,50,0.25)] sm:flex-row sm:gap-5 sm:p-6"
             >
-              <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-ivory/60">
-                <Icon className="h-7 w-7 text-taupe" strokeWidth={1.05} />
+              <span className="flex h-13 w-13 shrink-0 items-center justify-center rounded-full bg-ivory/60 sm:h-16 sm:w-16">
+                <Icon className="h-6 w-6 text-taupe sm:h-7 sm:w-7" strokeWidth={1.05} />
               </span>
 
-              <div className="grid h-full grid-rows-[auto_auto_1fr_auto] border-l border-fendi/30 pl-5">
-                <h3 className="font-serif text-[1.42rem] font-light leading-[1.2] text-graphite">
+              <div className="grid h-full w-full grid-rows-[auto_auto_1fr_auto] border-t border-fendi/30 pt-4 sm:border-l sm:border-t-0 sm:pl-5 sm:pt-0">
+                <h3 className="font-serif text-[1.32rem] font-light leading-[1.2] text-graphite sm:text-[1.42rem]">
                   {title}
                 </h3>
                 <p className="mt-2 text-[0.85rem] font-medium leading-[1.5] text-gold">
@@ -70,7 +70,7 @@ export function Modalities() {
                   href={whatsappLink(waMessage)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-2 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-gold transition-colors duration-300 hover:text-wood focus-visible:outline-gold"
+                  className="mt-5 inline-flex min-h-11 items-center gap-2 self-start text-[0.68rem] font-medium uppercase tracking-[0.12em] text-gold transition-colors duration-300 hover:text-wood focus-visible:outline-gold sm:min-h-0 sm:tracking-[0.16em]"
                 >
                   Agendar sua sessão
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -81,16 +81,16 @@ export function Modalities() {
         </div>
 
         <p
-          className="mt-8 flex flex-wrap items-center gap-2 text-[0.95rem] leading-[1.7] text-taupe"
+          className="mt-7 grid grid-cols-[auto_minmax(0,1fr)] items-start gap-x-3 text-[0.9rem] leading-[1.7] text-taupe sm:mt-8 sm:flex sm:flex-wrap sm:items-center sm:gap-2 sm:text-[0.95rem]"
           style={revealStyle(shown, 560)}
         >
-          <MapPin className="h-4 w-4 shrink-0 text-gold" strokeWidth={1.2} />
-          Atendimento presencial em Uberlândia/MG e on-line.
+          <MapPin className="mt-1 h-4 w-4 shrink-0 text-gold sm:mt-0" strokeWidth={1.2} />
+          <span>Atendimento presencial em Uberlândia/MG e on-line.</span>
           <a
             href={MAPS_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[0.9rem] text-gold underline-offset-4 transition-colors duration-300 hover:text-wood hover:underline"
+            className="col-start-2 mt-1 inline-flex min-h-11 items-center text-[0.88rem] text-gold underline-offset-4 transition-colors duration-300 hover:text-wood hover:underline sm:col-start-auto sm:mt-0 sm:min-h-0 sm:text-[0.9rem]"
           >
             R. Bernardo Cupertino, 704 — Martins
           </a>
