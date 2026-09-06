@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
 import { INSTAGRAM_URL } from "@/lib/contact";
+import { trackEvent } from "@/lib/analytics";
 import img1 from "@/assets/reflexao-1.jpg";
 import img2 from "@/assets/reflexao-2.jpg";
 import img3 from "@/assets/reflexao-3.jpg";
@@ -49,6 +50,7 @@ export function Reflections() {
           {INSTAGRAM_URL && (
             <a
               href={INSTAGRAM_URL}
+              onClick={() => trackEvent("click_instagram", { location: "reflexoes" })}
               target="_blank"
               rel="noopener noreferrer"
               className="group mt-6 inline-flex min-h-11 flex-col items-start justify-center gap-1.5 focus-visible:outline-gold sm:mt-7 sm:min-h-0"

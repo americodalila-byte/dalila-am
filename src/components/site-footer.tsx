@@ -1,6 +1,7 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
 import logo from "@/assets/logo-dalila.png.asset.json";
 import { whatsappLink, WA_MESSAGES, INSTAGRAM_URL, INSTAGRAM_HANDLE, EMAIL } from "@/lib/contact";
+import { trackEvent } from "@/lib/analytics";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -62,14 +63,14 @@ export function SiteFooter() {
           <ul className="mt-3.5 space-y-1 sm:space-y-2">
             {INSTAGRAM_URL && (
               <li>
-                <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className={`${linkClass} min-h-10 sm:min-h-0`}>
+                <a href={INSTAGRAM_URL} onClick={() => trackEvent("click_instagram", { location: "footer" })} target="_blank" rel="noopener noreferrer" className={`${linkClass} min-h-10 sm:min-h-0`}>
                   <Instagram className="h-4 w-4" strokeWidth={1.2} />
                   {INSTAGRAM_HANDLE ?? "Instagram"}
                 </a>
               </li>
             )}
             <li>
-              <a href={whatsappLink(WA_MESSAGES.footer)} target="_blank" rel="noopener noreferrer" className={`${linkClass} min-h-10 sm:min-h-0`}>
+              <a href={whatsappLink(WA_MESSAGES.footer)} onClick={() => trackEvent("click_whatsapp", { location: "footer" })} target="_blank" rel="noopener noreferrer" className={`${linkClass} min-h-10 sm:min-h-0`}>
                 <WhatsappIcon className="h-4 w-4" />
                 WhatsApp
               </a>

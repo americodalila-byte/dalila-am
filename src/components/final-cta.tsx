@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
 import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
+import { trackEvent } from "@/lib/analytics";
 
 function WhatsappIcon({ className }: { className?: string }) {
   return (
@@ -72,6 +73,7 @@ export function FinalCta() {
         >
           <a
             href={whatsappLink(WA_MESSAGES.agendar)}
+            onClick={() => trackEvent("click_agendar_consulta", { location: "cta_final" })}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex h-[52px] items-center justify-center gap-3 whitespace-nowrap rounded-[16px] bg-graphite px-5 text-[0.68rem] font-medium uppercase tracking-[0.1em] text-offwhite transition-all duration-300 hover:-translate-y-0.5 hover:bg-graphite/90 focus-visible:outline-gold sm:px-7 sm:tracking-[0.16em]"
@@ -81,6 +83,7 @@ export function FinalCta() {
           </a>
           <a
             href={whatsappLink(WA_MESSAGES.processo)}
+            onClick={() => trackEvent("click_whatsapp", { location: "cta_final" })}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex h-[52px] items-center justify-center gap-2.5 whitespace-nowrap rounded-[16px] border border-graphite/25 px-5 text-[0.68rem] font-medium uppercase tracking-[0.09em] text-graphite transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:text-gold focus-visible:outline-gold sm:gap-3 sm:px-7 sm:tracking-[0.16em]"
