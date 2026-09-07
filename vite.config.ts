@@ -12,4 +12,9 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Production deploys on Netlify: SSR served by a Netlify Function,
+  // static assets published from dist/. Inside the Lovable sandbox this
+  // preset is overridden automatically (cloudflare-module), so local
+  // builds and previews are unaffected.
+  nitro: { preset: "netlify" },
 });

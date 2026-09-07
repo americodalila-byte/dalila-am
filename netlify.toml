@@ -1,0 +1,16 @@
+# Netlify deploy configuration — TanStack Start (SSR via Netlify Functions)
+# The Nitro "netlify" preset (configured in vite.config.ts) outputs:
+#   - static assets  -> dist/                 (published below)
+#   - SSR function   -> .netlify/functions-internal (auto-detected by Netlify)
+# All routes, including "/", are served by the SSR function; static files
+# are preferred automatically (preferStatic), so no manual redirects needed.
+
+[build]
+  command = "bun run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  node_bundler = "none"
