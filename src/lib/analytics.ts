@@ -41,8 +41,6 @@ export const CONVERSION_EVENTS: AnalyticsEvent[] = [
   "click_whatsapp",
 ];
 
-type Params = { location?: string };
-
 declare global {
   interface Window {
     dataLayer?: unknown[];
@@ -147,12 +145,15 @@ export function denyConsent() {
  * Registra um evento de navegação/conversão.
  * `location` identifica apenas a seção do site (ex.: "hero"), nunca conteúdo do usuário.
  */
-export function trackEvent(event: AnalyticsEvent, params: Params = {}) {
+export function trackEvent(event: AnalyticsEvent, _params?: { location?: string }) {
+  void _params; // aceito por compatibilidade de assinatura; nunca enviado
   if (typeof window === "undefined") return;
+  // Somente com consentimento concedido; sem fila/retentativa.
+  if (getStoredConsent() !== "granted") return;
   ensureGtag();
   if (GTM_ID) {
-    window.dataLayer!.push({ event, ...params });
+    window.dataLayer!.push({ event });
     return;
   }
-  window.gtag!("event", event, params);
+  window.gtag!("event", event);
 }
