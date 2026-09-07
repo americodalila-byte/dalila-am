@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
 import { trackEvent } from "@/lib/analytics";
-import logo from "@/assets/logo-dalila.png.asset.json";
+import logo from "@/assets/logo-dalila.png";
 
 const nav = [
   { label: "Sobre", href: "#sobre" },
@@ -33,7 +33,7 @@ export function SiteHeader() {
       <div className="mx-auto grid max-w-[1440px] grid-cols-[minmax(0,1fr)_auto] items-center gap-2.5 px-4 py-2.5 sm:gap-4 sm:px-8 sm:py-3 lg:grid-cols-[1fr_auto_1fr] lg:py-4">
         <a href="#inicio" className="min-w-0 focus-visible:outline-gold" aria-label="Dalila Américo — início">
           <img
-            src={logo.url}
+            src={logo}
             alt="Dalila Américo"
             width={200}
             height={68}

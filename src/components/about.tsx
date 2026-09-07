@@ -1,4 +1,4 @@
-import dalilaSobre from "@/assets/dalila-sobre.png.asset.json";
+import dalilaSobre from "@/assets/dalila-sobre.png";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
 
 const formacao = [
@@ -17,7 +17,7 @@ export function About() {
           style={revealStyle(shown)}
         >
           <img
-            src={dalilaSobre.url}
+            src={dalilaSobre}
             alt="Dalila Américo, psicóloga"
             width={768}
             height={1344}
