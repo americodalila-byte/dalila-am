@@ -15,8 +15,10 @@
  * da terapia, telefone, e-mail ou conteúdo de mensagens.
  */
 
-export const GA4_ID = (import.meta.env['VITE_GA4_MEASUREMENT_ID'] as string | undefined) || "";
-export const GTM_ID = (import.meta.env['VITE_GTM_ID'] as string | undefined) || "";
+/** GA4 é administrado dentro do GTM — nenhum gtag.js direto é carregado aqui. */
+export const GA4_ID =
+  (import.meta.env['VITE_GA4_MEASUREMENT_ID'] as string | undefined) || "G-CDZ28K6VKF";
+export const GTM_ID = (import.meta.env['VITE_GTM_ID'] as string | undefined) || "GTM-MMD6Q9BZ";
 export const GOOGLE_ADS_ID = (import.meta.env['VITE_GOOGLE_ADS_ID'] as string | undefined) || "";
 
 export const CONSENT_STORAGE_KEY = "da-consent-analytics";
@@ -77,11 +79,13 @@ function injectScripts() {
 
   if (GTM_ID) {
     // GTM como gerenciador principal: nada de gtag.js aqui, para não duplicar tags.
+    // Proteção contra instalação duplicada do container.
+    if (document.querySelector(`script[src*="gtm.js?id=${GTM_ID}"]`)) return;
+    window.dataLayer!.push({ "gtm.start": Date.now(), event: "gtm.js" });
     const s = document.createElement("script");
     s.async = true;
     s.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`;
     document.head.appendChild(s);
-    window.dataLayer!.push({ "gtm.start": Date.now(), event: "gtm.js" });
     return;
   }
 
