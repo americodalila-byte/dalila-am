@@ -33,6 +33,6 @@ export const WA_MESSAGES = {
 export const WHATSAPP_URL = whatsappLink(WA_MESSAGES.agendar);
 
 export const INSTAGRAM_URL: string | null = "https://www.instagram.com/dalilaamerico.psi/";
-export const INSTAGRAM_HANDLE: string | null = "@dalilaamerico.psi";
+export const INSTAGRAM_HANDLE: string | null = null; // ex.: "@dalilaamerico"
 export const EMAIL: string | null = null; // ex.: "contato@dalilaamerico.com.br"
 export const LOCATION: string | null = null; // ex.: "Belo Horizonte • MG"
