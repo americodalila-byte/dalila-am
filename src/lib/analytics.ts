@@ -79,11 +79,13 @@ function injectScripts() {
 
   if (GTM_ID) {
     // GTM como gerenciador principal: nada de gtag.js aqui, para não duplicar tags.
+    // Proteção contra instalação duplicada do container.
+    if (document.querySelector(`script[src*="gtm.js?id=${GTM_ID}"]`)) return;
+    window.dataLayer!.push({ "gtm.start": Date.now(), event: "gtm.js" });
     const s = document.createElement("script");
     s.async = true;
     s.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`;
     document.head.appendChild(s);
-    window.dataLayer!.push({ "gtm.start": Date.now(), event: "gtm.js" });
     return;
   }
 
