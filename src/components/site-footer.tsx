@@ -1,5 +1,5 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/logo-dalila.png.asset.json";
+import logo from "@/assets/logo-dalila.png";
 import { whatsappLink, WA_MESSAGES, INSTAGRAM_URL, INSTAGRAM_HANDLE, EMAIL } from "@/lib/contact";
 import { trackEvent } from "@/lib/analytics";
 
@@ -45,7 +45,7 @@ export function SiteFooter() {
     <footer className="border-t border-gold/50 bg-offwhite px-4 py-9 sm:px-8 sm:py-8 lg:py-9">
       <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-9 sm:grid-cols-2 sm:gap-7 lg:grid-cols-[1fr_1fr_1.2fr_1.2fr] lg:items-start lg:gap-12">
         <div>
-          <img src={logo.url} alt="Dalila Américo" width={200} height={68} loading="lazy" className="h-10 w-auto sm:h-11" />
+          <img src={logo} alt="Dalila Américo" width={200} height={68} loading="lazy" className="h-10 w-auto sm:h-11" />
         </div>
 
         <nav aria-label="Navegação">

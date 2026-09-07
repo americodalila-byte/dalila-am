@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import dalila from "@/assets/dalila.png.asset.json";
+import dalila from "@/assets/dalila.png";
 import { whatsappLink, WA_MESSAGES } from "@/lib/contact";
 import { trackEvent } from "@/lib/analytics";
 
@@ -97,7 +97,7 @@ export function Hero() {
             className="relative aspect-[4/5] w-full max-w-[22rem] overflow-hidden rounded-[18px] border border-fendi/[0.06] bg-ivory shadow-[0_18px_50px_rgba(47,49,50,0.06)] sm:max-w-[23rem] lg:mb-16 lg:w-[86%] lg:max-w-[28rem] lg:rounded-[22px]"
           >
             <img
-              src={dalila.url}
+              src={dalila}
               alt="Dalila Américo, psicóloga"
               width={768}
               height={1376}
