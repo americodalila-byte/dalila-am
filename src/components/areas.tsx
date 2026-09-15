@@ -1,37 +1,37 @@
-import { Users, Home, MessagesSquare, Heart, User, Sun } from "lucide-react";
+import { Repeat2, Waypoints, ShieldCheck, Compass, Brain, Route } from "lucide-react";
 import { BotanicalMark } from "@/components/botanical-mark";
 import { useReveal, revealStyle } from "@/hooks/use-reveal";
 
 const cards = [
   {
-    Icon: Users,
-    title: "Relacionamentos",
-    text: "Dificuldades nos vínculos e na forma de se relacionar.",
+    Icon: Repeat2,
+    title: "Compreensão de padrões",
+    text: "Identificar ciclos, repetições e formas de se relacionar que atravessam sua história.",
   },
   {
-    Icon: Home,
-    title: "Família",
-    text: "Dinâmicas familiares, diferentes papéis e desafios ao longo da vida.",
+    Icon: Waypoints,
+    title: "Fortalecimento de vínculos",
+    text: "Construir relações mais conscientes, respeitosas e saudáveis.",
   },
   {
-    Icon: MessagesSquare,
-    title: "Comunicação",
-    text: "Construção de diálogos mais claros, conscientes e respeitosos.",
+    Icon: ShieldCheck,
+    title: "Limites e posicionamento",
+    text: "Reconhecer necessidades, estabelecer limites e encontrar formas mais conscientes de se posicionar.",
   },
   {
-    Icon: Heart,
-    title: "Emoções",
-    text: "Reconhecimento, compreensão e expressão do que você sente.",
+    Icon: Compass,
+    title: "Ampliação de perspectivas",
+    text: "Olhar para situações e relações por novos ângulos, ampliando possibilidades de compreensão.",
   },
   {
-    Icon: User,
-    title: "Autoconhecimento",
-    text: "Um olhar para sua história, escolhas e modo de se relacionar.",
+    Icon: Brain,
+    title: "Recursos emocionais",
+    text: "Desenvolver maneiras mais conscientes de reconhecer, compreender e lidar com o que você sente.",
   },
   {
-    Icon: Sun,
-    title: "Transições de Vida",
-    text: "Acolhimento diante de perdas, mudanças, decisões e novos ciclos.",
+    Icon: Route,
+    title: "Escolhas mais conscientes",
+    text: "Ampliar possibilidades e construir caminhos mais alinhados às suas necessidades e ao momento de vida.",
   },
 ];
 
@@ -49,7 +49,7 @@ export function Areas() {
         <div className="text-center" style={revealStyle(shown)}>
           <BotanicalMark />
           <h2 className="balanced-title mt-4 font-serif text-[1.52rem] font-light uppercase leading-[1.22] tracking-normal text-graphite sm:mt-5 sm:text-[2rem] lg:text-[2.35rem]">
-            O que podemos trabalhar
+            O que podemos desenvolver
             <br className="hidden sm:block" /> na terapia?
           </h2>
           <div className="mx-auto mt-4 h-px w-12 bg-gold sm:mt-5 sm:w-14" aria-hidden="true" />
