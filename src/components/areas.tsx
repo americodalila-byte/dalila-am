@@ -6,7 +6,7 @@ const cards = [
   {
     Icon: Repeat2,
     title: "Compreensão de padrões",
-    text: "Identificar ciclos, repetições e formas de se relacionar que atravessam sua história.",
+    text: "Compreender ciclos e padrões que atravessam sua história e influenciam suas relações.",
   },
   {
     Icon: Waypoints,
