@@ -31,7 +31,8 @@ export type AnalyticsEvent =
   | "click_agendar_sessao"
   | "click_whatsapp"
   | "click_instagram"
-  | "click_localizacao";
+  | "click_localizacao"
+  | "open_reflexao_comunicacao";
 
 /** Eventos que devem ser importados como conversão no Google Ads. */
 export const CONVERSION_EVENTS: AnalyticsEvent[] = [
