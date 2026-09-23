@@ -160,7 +160,9 @@ function ReflectionDialog({
             </Dialog.Title>
             <div className="mt-5 h-px w-12 bg-gold" aria-hidden="true" />
             <Dialog.Description className="sr-only">
-              Reflexão sobre {category.toLocaleLowerCase("pt-BR")}.
+              {event === "open_reflexao_comunicacao"
+                ? "Reflexão sobre comunicação nos relacionamentos."
+                : `Reflexão sobre ${category.toLocaleLowerCase("pt-BR")}.`}
             </Dialog.Description>
 
             <div className="mt-6 space-y-4 text-[0.9rem] leading-[1.75] text-taupe sm:mt-7 sm:text-[0.9375rem] sm:leading-[1.8]">
