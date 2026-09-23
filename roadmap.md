@@ -4,4 +4,4 @@
 - [x] Validar em 320, 375, 390 e 430 px
 - [x] Confirmar links, âncoras, FAQ, overflow e desktop
 - [x] Implementar e validar o modal da reflexão de Comunicação
-- [ ] Implementar e validar os modais de Relacionamentos e Autoconhecimento
+- [x] Implementar e validar os modais de Relacionamentos e Autoconhecimento
